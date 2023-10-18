@@ -1,9 +1,10 @@
 {
-  "name": "case-fullstack-cinema",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Jeorge01/case-fullstack-cinema/issues"
   },
-  "homepage": "https://github.com/Jeorge01/case-fullstack-cinema#readme"
+  "homepage": "https://github.com/Jeorge01/case-fullstack-cinema#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
