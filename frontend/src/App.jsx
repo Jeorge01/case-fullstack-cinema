@@ -28,9 +28,9 @@ function App() {
           {/* <Route path='*' element={<NoPage />} /> */}
         </Routes>
       </BrowserRouter>
-      <h1>Sallad</h1>
+      {/* <h1>Sallad</h1>
       <p>Hello from frontend !!</p>
-      <p>{message.message ? message.message : "Cannot fetch backend data"}</p>
+      <p>{message.message ? message.message : "Cannot fetch backend data"}</p> */}
     </div>
   );
 }

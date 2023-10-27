@@ -11,11 +11,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  /* width: 100vw;
+/* body {
+  width: 100vw;
   height: 100vh;
-  background: linear-gradient(180deg, #232323 0%, #2F2F2F 13.02%, #232323 100%); */
-}
+  background: linear-gradient(180deg, #232323 0%, #2F2F2F 13.02%, #232323 100%);
+} */
 
 .home {
   width: 100vw;
