@@ -23,7 +23,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('../public/cinema.json');
+        const response = await fetch('http://localhost:3123/movies');
 
 
         if (!response.ok) {
