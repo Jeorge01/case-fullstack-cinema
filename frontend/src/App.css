@@ -381,3 +381,11 @@ div.seats div {
   width: 100%;
   background-color: transparent;
 }
+
+.checked {
+  background-color: green !important;
+}
+
+.alreadyBooked {
+  background-color: red !important;
+}

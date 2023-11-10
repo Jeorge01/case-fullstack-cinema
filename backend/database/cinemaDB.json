@@ -14,7 +14,7 @@
               "time": "2023-09-07T16:00:00.000Z",
               "room": "Room 1",
               "seats": [
-                {"seatNumber": "A1", "booked": true},
+                {"seatNumber": "A1", "booked": false},
                 {"seatNumber": "A2", "booked": false},
                 {"seatNumber": "A3", "booked": true},
                 {"seatNumber": "A4", "booked": true},
