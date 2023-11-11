@@ -389,3 +389,9 @@ div.seats div {
 .alreadyBooked {
   background-color: red !important;
 }
+
+.nonClickable {
+  /* Add your non-clickable seat styles here */
+  opacity: 0.5; /* Example: reduce opacity for non-clickable seats */
+  pointer-events: none; /* Disable pointer events for non-clickable seats */
+}
