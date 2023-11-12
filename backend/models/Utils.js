@@ -10,6 +10,10 @@ function setDatabase(data) {
     fs.writeFileSync('./database/cinemaDB.json', str);
 }
 
+getBooking() {
+    fs
+}
+
 module.exports = {
     getDatabase,
     setDatabase

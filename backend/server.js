@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const movieRoutes = require("./routes/MovieRoutes");
+const MovieRoutes = require("./routes/MovieRoutes");
+const BookingRoutes = require("./routes/BookingRoutes"); 
 
 const server = express();
 const PORT = 3123;
@@ -11,7 +12,8 @@ server.use(express.json());
 // Make it possible to serve other apps on the same computer
 server.use(cors());
 
-server.use(movieRoutes);
+server.use(MovieRoutes);
+server.use(BookingRoutes);
 
 
 
