@@ -12,13 +12,11 @@ function setDatabase(data) {
 
 function getBookings() {
     const bookingsData = fs.readFileSync('./database/bookingDB.json', {encoding: "utf-8"});
-    console.log(bookingsData);
     return JSON.parse(bookingsData);
 }
 
 function setBookings(data) {
     const str = JSON.stringify(data);
-    console.log(str);
     fs.writeFileSync('./database/bookingDB.json', str);
 }
 

@@ -20,7 +20,6 @@ function createBookings(newBooking) {
     }
 
     allBookings.push(bookingToAdd);
-    console.log(bookingToAdd);
 
     setBookings(allBookings); 
 

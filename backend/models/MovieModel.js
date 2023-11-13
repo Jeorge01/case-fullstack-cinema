@@ -10,7 +10,6 @@ const allMovies = getDatabase();
 
 
 function showAll() {
-    console.log(allMovies.cinema.movies)
     return allMovies;
 }
 

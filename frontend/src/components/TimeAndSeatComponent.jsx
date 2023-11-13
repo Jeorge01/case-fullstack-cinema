@@ -1,10 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import { showAlert } from "./AlertFunction";
 
+async function handleOnSubmit(e, movie, selectedShow, checkedSeats, username) {
+    e.preventDefault();
+    const email = e.target.form[0].value
+    const postData = {
+        username: username,
+        email: email,
+        title: movie.title,
+        room: selectedShow.room, 
+        time: selectedShow.time, 
+        seats: checkedSeats.map((seatNumber) => ({ seatNumber })),
+    }
+
+    console.log(postData);
+
+    try {
+        const response = await fetch("http://localhost:3123/book", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(postData)
+            
+        });
+
+        if (!response.ok) {
+            const errorMessage = `Failed to book the show. Server returned ${response.status}: ${response.statusText}`;
+            console.error(errorMessage);
+            
+            // Display an alert with the error message
+            window.alert(errorMessage);
+            return;
+        }
+        
+        window.alert('Booking successful!');
+
+    } catch (error) {
+        console.error("Error booking the show:", error);
+
+        window.alert('An unexpected error occurred. Please try again.');
+    }
+}
+
 const MoviePage = ({ movie }) => {
     const [selectedShow, setSelectedShow] = useState(null);
     const [checkedSeats, setCheckedSeats] = useState([]);
     const totalSeats = 36;
+    const [bookingSuccess, setBookingSuccess] = useState(false);
 
     useEffect(() => {
         // Reset selected show and checked seats when movie prop changes
@@ -80,7 +123,7 @@ const MoviePage = ({ movie }) => {
                                                 className="seatCheckbox"
                                                 type="checkbox"
                                                 name={seat.seatNumber}
-                                                onClick={() => handleCheckboxClick(seat.seatNumber, seat.booked)}
+                                                onChange={() => handleCheckboxClick(seat.seatNumber, seat.booked)}
                                                 checked={checkedSeats.includes(seat.seatNumber)}
                                                 disabled={seat.booked || (checkedSeats.length === 6 && !checkedSeats.includes(seat.seatNumber))}
                                             />
@@ -103,7 +146,7 @@ const MoviePage = ({ movie }) => {
             <form className="bookingSubmit" action="">
                 <div className="bookInputs container">
                     <input className="emailInput" type="email" placeholder="Enter your Email and click on book" />
-                    <input className="confirmBooking" type="submit" value="Book" on required onClick={showAlert} disabled={isButtonDisabled} />
+                    <input className="confirmBooking" type="submit" onClick={(e) => handleOnSubmit(e, movie, selectedShow, checkedSeats)} value="Book" required disabled={isButtonDisabled} />
                 </div>
             </form>
         </div>

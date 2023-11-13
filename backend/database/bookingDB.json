@@ -1,18 +1,61 @@
 [
     {
-        "username": "username",
-        "email": "email",
-        "title": "title",
-        "room": "room",
-        "time": "time",
-        "seats": "seats"
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-11T17:00:00.000Z",
+        "seats": [
+            {
+                "seatNumber": "A31"
+            },
+            {
+                "seatNumber": "A32"
+            },
+            {
+                "seatNumber": "A20"
+            },
+            {
+                "seatNumber": "A33"
+            }
+        ]
     },
     {
-        "username": "username1",
-        "email": "email1",
-        "title": "title1",
-        "room": "room1",
-        "time": "time1",
-        "seats": "seats1"
+        "email": "asdasd@sadasdsaa",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            {
+                "seatNumber": "A1"
+            },
+            {
+                "seatNumber": "A13"
+            },
+            {
+                "seatNumber": "A25"
+            },
+            {
+                "seatNumber": "A26"
+            },
+            {
+                "seatNumber": "A14"
+            }
+        ]
+    },
+    {
+        "email": "asdasd@kalle",
+        "title": "Joker",
+        "room": "Room 1",
+        "time": "2023-09-06T17:00:00.000Z",
+        "seats": [
+            {
+                "seatNumber": "A28"
+            },
+            {
+                "seatNumber": "A29"
+            },
+            {
+                "seatNumber": "A17"
+            }
+        ]
     }
 ]
