@@ -1,4 +1,3 @@
-export function showAlert(e) {
-    e.preventDefault();
-    alert('You have booked tickets for a movie!');
-  }
+export const showAlert = (message) => {
+  window.alert(message);
+};

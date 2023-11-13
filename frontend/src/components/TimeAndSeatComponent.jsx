@@ -1,9 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { showAlert } from "./AlertFunction";
 
-async function handleOnSubmit(e, movie, selectedShow, checkedSeats, username) {
+async function handleOnSubmit(e, movie, selectedShow, checkedSeats) {
     e.preventDefault();
-    const email = e.target.form[0].value
+    const username = document.querySelector('.usernameInput').value;
+    const email = document.querySelector('.emailInput').value;
+
+    if (!selectedShow) {
+        showAlert('Please select a show time.');
+        return;
+    }
+
+    if (checkedSeats.length === 0) {
+        showAlert('Please select at least one seat.');
+        return;
+    }
+
+    if (username.length < 2) {
+        showAlert('Please enter a valid name with at least 2 letters.');
+        return;
+    }
+
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+        showAlert('Please enter a valid email address.');
+        return;
+    }
+
     const postData = {
         username: username,
         email: email,
@@ -145,6 +167,7 @@ const MoviePage = ({ movie }) => {
 
             <form className="bookingSubmit" action="">
                 <div className="bookInputs container">
+                    <input className="usernameInput" type="text" placeholder="Enter name" />
                     <input className="emailInput" type="email" placeholder="Enter your Email and click on book" />
                     <input className="confirmBooking" type="submit" onClick={(e) => handleOnSubmit(e, movie, selectedShow, checkedSeats)} value="Book" required disabled={isButtonDisabled} />
                 </div>
