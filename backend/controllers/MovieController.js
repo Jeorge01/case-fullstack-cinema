@@ -1,11 +1,8 @@
 const MovieModel = require("../models/MovieModel");
 
 function handleShowAll(req, res) {
-
     res.send(MovieModel.showAll());
-    
 }
-
 
 function handleShowOneMovie(req, res) {
 

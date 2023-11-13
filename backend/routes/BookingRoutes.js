@@ -1,31 +1,9 @@
-const express = require("express");
-const router = express.Router();
-const fs = require("fs");
+const { Router } = require("express");
+const BookingController = require("../controllers/BookingController");
+const BookingRouter = Router();
 
-router.post("/bookings", (req, res) => {
-    const { email, movie, show, selectedSeats } = req.body;
+BookingRouter.get("/showallbooking", BookingController.handleShowAllBookings);
 
-    // Do validation checks if needed
+BookingRouter.post("/book", BookingController.handleCreateBookings);
 
-    // Save booking information to bookingDB.json
-    const bookingData = {
-        email,
-        movie,
-        show,
-        selectedSeats,
-    };
-
-    try {
-        const bookingDBPath = './database/bookingDB.json';
-        const bookings = JSON.parse(fs.readFileSync(bookingDBPath));
-        bookings.push(bookingData);
-        fs.writeFileSync(bookingDBPath, JSON.stringify(bookings, null, 2));
-
-        res.status(201).json({ success: true, message: 'Booking successful!' });
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ success: false, message: 'Internal Server Error' });
-    }
-});
-
-module.exports = router;
+module.exports = BookingRouter;

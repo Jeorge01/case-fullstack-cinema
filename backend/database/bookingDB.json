@@ -1,0 +1,18 @@
+[
+    {
+        "username": "username",
+        "email": "email",
+        "title": "title",
+        "room": "room",
+        "time": "time",
+        "seats": "seats"
+    },
+    {
+        "username": "username1",
+        "email": "email1",
+        "title": "title1",
+        "room": "room1",
+        "time": "time1",
+        "seats": "seats1"
+    }
+]

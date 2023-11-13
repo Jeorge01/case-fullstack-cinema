@@ -103,7 +103,7 @@ const MoviePage = ({ movie }) => {
             <form className="bookingSubmit" action="">
                 <div className="bookInputs container">
                     <input className="emailInput" type="email" placeholder="Enter your Email and click on book" />
-                    <input className="confirmBooking" type="submit" value="Book" required onClick={showAlert} disabled={isButtonDisabled} />
+                    <input className="confirmBooking" type="submit" value="Book" on required onClick={showAlert} disabled={isButtonDisabled} />
                 </div>
             </form>
         </div>

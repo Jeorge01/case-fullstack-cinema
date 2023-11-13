@@ -22,7 +22,6 @@ function showOneById(id) {
 
 
 module.exports = {
-    // add functions here to export!
     showAll,
     showOneById
 }
