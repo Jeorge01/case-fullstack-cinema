@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const MovieRoutes = require("./routes/MovieRoutes");
 const BookingRoutes = require("./routes/BookingRoutes"); 
+const userRoutes = require("./routes/UserRoutes");
 
 const server = express();
 const PORT = 3123;
@@ -14,6 +15,7 @@ server.use(cors());
 
 server.use(MovieRoutes);
 server.use(BookingRoutes);
+server.use(userRoutes);
 
 
 

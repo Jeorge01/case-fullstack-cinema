@@ -1,135 +1,108 @@
 [
-    {
-        "title": "Narnia",
-        "room": "Room 1",
-        "time": "2023-09-11T17:00:00.000Z",
-        "seats": [
-            {
-                "seatNumber": "A31"
-            },
-            {
-                "seatNumber": "A32"
-            },
-            {
-                "seatNumber": "A20"
-            },
-            {
-                "seatNumber": "A33"
-            }
-        ]
-    },
-    {
-        "email": "asdasd@sadasdsaa",
-        "title": "Narnia",
-        "room": "Room 1",
-        "time": "2023-09-07T16:00:00.000Z",
-        "seats": [
-            {
-                "seatNumber": "A1"
-            },
-            {
-                "seatNumber": "A13"
-            },
-            {
-                "seatNumber": "A25"
-            },
-            {
-                "seatNumber": "A26"
-            },
-            {
-                "seatNumber": "A14"
-            }
-        ]
-    },
-    {
-        "email": "asdasd@kalle",
-        "title": "Joker",
-        "room": "Room 1",
-        "time": "2023-09-06T17:00:00.000Z",
-        "seats": [
-            {
-                "seatNumber": "A28"
-            },
-            {
-                "seatNumber": "A29"
-            },
-            {
-                "seatNumber": "A17"
-            }
-        ]
-    },
-    {
-        "email": "johannes@gmail.com",
-        "title": "Narnia",
-        "room": "Room 1",
-        "time": "2023-09-07T16:00:00.000Z",
-        "seats": [
-            {
-                "seatNumber": "A1"
-            },
-            {
-                "seatNumber": "A13"
-            },
-            {
-                "seatNumber": "A25"
-            },
-            {
-                "seatNumber": "A26"
-            },
-            {
-                "seatNumber": "A14"
-            },
-            {
-                "seatNumber": "A2"
-            }
-        ]
-    },
-    {
-        "username": "kalle",
-        "email": "kalle@kalle.com",
-        "title": "Narnia",
-        "room": "Room 1",
-        "time": "2023-09-15T16:00:00.000Z",
-        "seats": [
-            {
-                "seatNumber": "A10"
-            },
-            {
-                "seatNumber": "A22"
-            },
-            {
-                "seatNumber": "A35"
-            }
-        ]
-    },
-    {
-        "username": "kalle1",
-        "email": "kalle1@kalle.com",
-        "title": "Narnia",
-        "room": "Room 1",
-        "time": "2023-09-15T16:00:00.000Z",
-        "seats": [
-            {
-                "seatNumber": "A33"
-            },
-            {
-                "seatNumber": "A32"
-            },
-            {
-                "seatNumber": "A20"
-            }
-        ]
-    },
-    {
-        "username": "kk",
-        "email": "johannes@johannes.com",
-        "title": "Narnia",
-        "room": "Room 1",
-        "time": "2023-09-07T16:00:00.000Z",
-        "seats": [
-            {
-                "seatNumber": "A1"
-            }
-        ]
-    }
+  {
+    "email": "asdasd@sadasdsaa",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-07T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A1" },
+      { "seatNumber": "A13" },
+      { "seatNumber": "A25" },
+      { "seatNumber": "A26" },
+      { "seatNumber": "A14" }
+    ]
+  },
+  {
+    "email": "asdasd@kalle",
+    "title": "Joker",
+    "room": "Room 1",
+    "time": "2023-09-06T17:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A28" },
+      { "seatNumber": "A29" },
+      { "seatNumber": "A17" }
+    ]
+  },
+  {
+    "email": "johannes@gmail.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-07T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A1" },
+      { "seatNumber": "A13" },
+      { "seatNumber": "A25" },
+      { "seatNumber": "A26" },
+      { "seatNumber": "A14" },
+      { "seatNumber": "A2" }
+    ]
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-15T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A10" },
+      { "seatNumber": "A22" },
+      { "seatNumber": "A35" }
+    ]
+  },
+  {
+    "username": "kalle1",
+    "email": "kalle1@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-15T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A33" },
+      { "seatNumber": "A32" },
+      { "seatNumber": "A20" }
+    ]
+  },
+  {
+    "username": "kk",
+    "email": "johannes@johannes.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-07T16:00:00.000Z",
+    "seats": [{ "seatNumber": "A1" }]
+  },
+  {
+    "username": "kalle anka",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-07T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A2" },
+      { "seatNumber": "A14" },
+      { "seatNumber": "A26" }
+    ]
+  },
+  {
+    "username": "kalle anka",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-07T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A2" },
+      { "seatNumber": "A14" },
+      { "seatNumber": "A26" }
+    ]
+  },
+  {
+    "username": "user2",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-07T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A2" },
+      { "seatNumber": "A14" },
+      { "seatNumber": "A26" }
+    ]
+  }
 ]
