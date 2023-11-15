@@ -41,4 +41,8 @@ function createBookings(newBooking) {
     }
 }
 
+function removeBookings() {
+    
+}
+
 module.exports = { showAllBookings, createBookings };

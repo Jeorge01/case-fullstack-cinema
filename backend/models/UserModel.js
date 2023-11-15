@@ -43,6 +43,14 @@ function getUserByUsername(username) {
     return user;
 }
 
+function createUser() {
+
+}
+
+function updateUser() {
+    
+}
+
 // console.log(getUserByUsername("user2"));
 
 module.exports = {
