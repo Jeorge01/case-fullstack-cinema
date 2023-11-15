@@ -1,6 +1,23 @@
 const {getUsers, setUsers} = require("./Utils");
 const bookingModel = require("./BookingModel");
 
+function authenticate(username, password) {
+
+    const allUsers = getUsers(); 
+    const user = allUsers.find(user => user.username === username)
+
+    if (!user) {
+        return false;
+    }
+
+    const isMatching = user.password === password;
+
+    return isMatching;
+
+}
+
+console.log(authenticate("user1", "123sallad"));
+
 function showAllUsers() {
     const allUsers = getUsers();
 
@@ -8,8 +25,6 @@ function showAllUsers() {
 
     return allUsers;
 }
-
-console.log(showAllUsers());
 
 function getUserByUsername(username) {
     const allUsers = getUsers();
@@ -28,9 +43,10 @@ function getUserByUsername(username) {
     return user;
 }
 
-console.log(getUserByUsername("user2"));
+// console.log(getUserByUsername("user2"));
 
 module.exports = {
     showAllUsers,
-    getUserByUsername
+    getUserByUsername,
+    authenticate
 }
