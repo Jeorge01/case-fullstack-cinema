@@ -104,5 +104,225 @@
       { "seatNumber": "A14" },
       { "seatNumber": "A26" }
     ]
+  },
+  { "username": "kalle", "email": "kalle@kalle.com" },
+  {
+    "username": "kalle",
+    "email": "kalle@kaalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T13:51:55.844Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kaalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T13:55:54.496Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T13:59:33.197Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:04:38.167Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:06:07.330Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:12:29.654Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:20:20.204Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:23:12.712Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:27:11.713Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kaLLE.COM",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:28:59.854Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:31:24.265Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:36:36.140Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:41:41.466Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T14:57:28.663Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T15:02:11.599Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T15:07:45.329Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T15:11:56.339Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T15:28:30.333Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-07T16:00:00.000Z",
+    "seats": [],
+    "bookedAt": "2023-11-15T16:24:21.906Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "seats": [
+      { "seatNumber": "A2" },
+      { "seatNumber": "A14" },
+      { "seatNumber": "A26" }
+    ],
+    "bookedAt": "2023-11-15T16:27:14.065Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T16:34:06.098Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T16:45:59.060Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "",
+    "time": "",
+    "seats": [],
+    "bookedAt": "2023-11-15T16:49:14.201Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-15T16:00:00.000Z",
+    "seats": [],
+    "bookedAt": "2023-11-15T16:50:06.597Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-15T16:00:00.000Z",
+    "seats": [],
+    "bookedAt": "2023-11-15T16:50:49.368Z"
+  },
+  {
+    "username": "kalle",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-15T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A2" },
+      { "seatNumber": "A14" },
+      { "seatNumber": "A26" }
+    ],
+    "bookedAt": "2023-11-15T16:54:50.324Z"
+  },
+  {
+    "username": "Amanda",
+    "email": "kalle@kalle.com",
+    "title": "Narnia",
+    "room": "Room 1",
+    "time": "2023-09-15T16:00:00.000Z",
+    "seats": [
+      { "seatNumber": "A2" },
+      { "seatNumber": "A14" },
+      { "seatNumber": "A26" }
+    ],
+    "bookedAt": "2023-11-15T16:55:33.806Z"
   }
 ]
