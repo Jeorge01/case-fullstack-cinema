@@ -1,4 +1,4 @@
-const {getDatabase, setDatabase} = require("./Utils");
+const { getDatabase, setDatabase } = require("./Utils");
 
 // const movieDatabase = [
 //     {id: 1, title: "kalle", content: "kalle is a legend", author: "kalles lerjeunge"},
@@ -8,19 +8,15 @@ const {getDatabase, setDatabase} = require("./Utils");
 
 const allMovies = getDatabase();
 
-
 function showAll() {
     return allMovies;
 }
 
 function showOneById(id) {
-    return allMovies.cinema.movies.find(movie => movie.id === id);
+    return allMovies.cinema.movies.find((movie) => movie.id === id);
 }
-
-
-
 
 module.exports = {
     showAll,
-    showOneById
-}
+    showOneById,
+};

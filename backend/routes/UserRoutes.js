@@ -10,4 +10,6 @@ UserRouter.get("/users/:username", UserController.handleGetUserByUsername);
 
 UserRouter.post("/createUser", UserController.handleCreateUser);
 
+UserRouter.put("/changeUserData/:username", UserController.handleUpdateUser);
+
 module.exports = UserRouter;

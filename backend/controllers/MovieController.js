@@ -5,15 +5,13 @@ function handleShowAll(req, res) {
 }
 
 function handleShowOneMovie(req, res) {
-
     const { id } = req.params;
 
     res.send(MovieModel.showOneById(Number(id)));
 }
 
-
 module.exports = {
     // export functions here!
     handleShowAll,
-    handleShowOneMovie
-}
+    handleShowOneMovie,
+};

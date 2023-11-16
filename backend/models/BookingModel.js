@@ -8,19 +8,20 @@ function showAllBookings() {
 function createBookings(newBooking) {
     try {
         const allBookings = getBookings();
-        
+
         // Check if 'newBooking.seats' is defined before using map
-        const seats = newBooking.seats ? newBooking.seats.map(seat => seat.seatNumber) : [];
+        const seats = newBooking.seats ? newBooking.seats.map((seat) => seat.seatNumber) : [];
 
         console.log("newBooking:", newBooking);
         console.log("seats:", seats);
 
         const bookingToAdd = {
+            name:newBooking.name,
             username: newBooking.username,
             email: newBooking.email,
-            title: newBooking.title || '', // Include title if available
-            room: newBooking.room || '',   // Include room if available
-            time: newBooking.time || '',   // Include time if available
+            title: newBooking.title || "", // Include title if available
+            room: newBooking.room || "", // Include room if available
+            time: newBooking.time || "", // Include time if available
             seats: seats,
             bookedAt: new Date(),
         };
@@ -33,7 +34,7 @@ function createBookings(newBooking) {
         return {
             success: true,
             message: "Booking successful",
-            data: bookingToAdd
+            data: bookingToAdd,
         };
     } catch (error) {
         console.error("Error in createBookings:", error);
@@ -41,8 +42,6 @@ function createBookings(newBooking) {
     }
 }
 
-function removeBookings() {
-    
-}
+function removeBookings() {}
 
 module.exports = { showAllBookings, createBookings };

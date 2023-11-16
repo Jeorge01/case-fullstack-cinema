@@ -1,1 +1,18 @@
-[{"username":"user1","password":"123sallad"},{"username":"user2","password":"321sallad"},{"name":"kalle","username":"user3","email":"kalle@kalle.com","password":"1234kalle"},{"name":"kalle","username":"DanneBoii","email":"kalle1@kalle.com","password":"1234kalle"},{"userID":"18bd8806a03-b0a54","name":"kalle","username":"DanneBoii1","email":"kalle1@kalle.com","password":"1234kalle"},{"userID":"18bd880d521-d5e1c","name":"kalle","username":"DanneBoii2","email":"kalle1@kalle.com","password":"1234kalle"},{"userID":"18bd88219fa-3759f","name":"kalle","username":"DanneBoii3","email":"kalle1@kalle.com","password":"1234kalle"}]
+[
+    { "name": "kalle", "username": "user3", "email": "kalle@kalle.com", "password": "1234kalle" },
+    { "name": "kalle", "username": "DanneBoii", "email": "kalle1@kalle.com", "password": "1234kalle" },
+    {
+        "userID": "18bda0bea17-7c011",
+        "name": "Balle",
+        "username": "balle",
+        "email": "kalle1@kalle.com",
+        "password": "1234kalle"
+    },
+    {
+        "userID": "18bda0c5f87-d9af",
+        "name": "Balle",
+        "username": "DanneBoii1",
+        "email": "kalle1@kalle.com",
+        "password": "1234kalle"
+    }
+]
