@@ -42,9 +42,27 @@ function handleGetUserByUsername(req, res) {
     res.send(user);
 }
 
+function handleCreateUser(req, res) {
+    try {
+        const userData = req.body;
+
+        const result = UserModel.createUser(userData);
+
+        if (result.success) {
+            res.status(201).json(result);
+        } else {
+            res.status(400).json(result);
+        }
+    } catch (error) {
+        console.error("Error in handleCreateUser:", error);
+        res.status(500).json({ success: false, message: "Internal server error", error: error.message });
+    }
+}
+
 module.exports = {
     handleShowAllUsers,
     handleGetUserByUsername,
     handleSignIn,
-    userSessions
+    userSessions,
+    handleCreateUser
 }

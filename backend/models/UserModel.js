@@ -43,8 +43,38 @@ function getUserByUsername(username) {
     return user;
 }
 
-function createUser() {
+function createUser(userData) {
+    try {
+        const allUsers = getUsers();
 
+        const usernameAleadyExists = allUsers.some(user => user.username === userData.username);
+
+        if (usernameAleadyExists) {
+            return {
+                success: false,
+                message: "Username is already in use. Please choose another username",
+            };
+        }
+
+        const userToAdd = {
+            name: userData.name,
+            username: userData.username,
+            email: userData.email,
+            password: userData.password,            
+        };
+
+        allUsers.push(userToAdd);
+        setUsers(allUsers);
+
+        return {
+            success: true,
+            message: "creating account successful",
+            data: userToAdd
+        };
+    } catch (error) {
+        console.error("Error in createUser:", error);
+        throw error;
+    }
 }
 
 function updateUser() {
@@ -56,5 +86,6 @@ function updateUser() {
 module.exports = {
     showAllUsers,
     getUserByUsername,
-    authenticate
+    authenticate,
+    createUser
 }

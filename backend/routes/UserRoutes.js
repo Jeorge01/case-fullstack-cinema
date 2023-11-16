@@ -8,4 +8,6 @@ UserRouter.get("/users", UserController.handleShowAllUsers);
 
 UserRouter.get("/users/:username", UserController.handleGetUserByUsername);
 
+UserRouter.post("/createUser", UserController.handleCreateUser);
+
 module.exports = UserRouter;
