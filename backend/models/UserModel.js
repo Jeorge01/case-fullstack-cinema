@@ -44,6 +44,14 @@ function getUserByUsername(username) {
 }
 
 function createUser(userData) {
+
+    function generateUserID() {
+        const timestamp = new Date().getTime().toString(16); // Convert timestamp to hexadecimal
+        const randomPart = Math.floor(Math.random() * 1000000).toString(16); // Generate a random hexadecimal number
+    
+        return `${timestamp}-${randomPart}`;
+    }
+
     try {
         const allUsers = getUsers();
 
@@ -57,6 +65,7 @@ function createUser(userData) {
         }
 
         const userToAdd = {
+            userID: generateUserID(),
             name: userData.name,
             username: userData.username,
             email: userData.email,
