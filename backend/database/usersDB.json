@@ -1,6 +1,4 @@
 [
-    { "name": "kalle", "username": "user3", "email": "kalle@kalle.com", "password": "1234kalle" },
-    { "name": "kalle", "username": "DanneBoii", "email": "kalle1@kalle.com", "password": "1234kalle" },
     {
         "userID": "18bda0bea17-7c011",
         "name": "Balle",
@@ -10,8 +8,15 @@
     },
     {
         "userID": "18bda0c5f87-d9af",
-        "name": "Balle",
+        "name": "DanneBoii",
         "username": "DanneBoii1",
+        "email": "kalle1@kalle.com",
+        "password": "1234kalle"
+    },
+    {
+        "userID": "18bdaa5f075-ac8cc",
+        "name": "Balle",
+        "username": "balle3",
         "email": "kalle1@kalle.com",
         "password": "1234kalle"
     }

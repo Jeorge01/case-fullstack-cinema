@@ -72,10 +72,13 @@ function createUser(userData) {
         allUsers.push(userToAdd);
         setUsers(allUsers);
 
+        // Exclude password from the returned data
+        const { password, ...userDataWithoutPassword } = userToAdd;
+
         return {
             success: true,
-            message: "creating account successful",
-            data: userToAdd,
+            message: "Creating account successful",
+            data: userDataWithoutPassword,
         };
     } catch (error) {
         console.error("Error in createUser:", error);
@@ -86,15 +89,6 @@ function createUser(userData) {
 function updateUser(userData) {
     try {
         const allUsers = getUsers();
-
-        const usernameAleadyExists = allUsers.some((user) => user.username === userData.username);
-
-        if (usernameAleadyExists) {
-            return {
-                success: false,
-                message: "Username is already in use. Please choose another username",
-            };
-        }
 
         const userIdToUpdate = userData.userID;
 
@@ -107,18 +101,35 @@ function updateUser(userData) {
             };
         }
 
-        // Update user data
+        // Check if the new username is provided and different from the existing one
+        if (userData.username && userData.username !== userToUpdate.username) {
+            const usernameAleadyExists = allUsers.some((user) => user.username === userData.username);
+
+            if (usernameAleadyExists) {
+                return {
+                    success: false,
+                    message: "Username is already in use. Please choose another username",
+                };
+            }
+
+            // Update the username if it's provided and different
+            userToUpdate.username = userData.username;
+        }
+
+        // Update other user data
         userToUpdate.name = userData.name !== undefined ? userData.name : userToUpdate.name;
-        userToUpdate.username = userData.username !== undefined ? userData.username : userToUpdate.username;
         userToUpdate.email = userData.email !== undefined ? userData.email : userToUpdate.email;
         userToUpdate.password = userData.password !== undefined ? userData.password : userToUpdate.password;
 
         setUsers(allUsers);
 
+        // Exclude password from the returned data
+        const { password, ...userDataWithoutPassword } = userToUpdate;
+
         return {
             success: true,
             message: "User data updated successfully",
-            data: userToUpdate,
+            data: userDataWithoutPassword,
         };
     } catch (error) {
         console.error("Error in updateUser:", error);
