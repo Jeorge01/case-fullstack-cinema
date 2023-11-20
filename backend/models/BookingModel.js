@@ -12,21 +12,27 @@ function createBookings(newBooking) {
         // Check if 'newBooking.seats' is defined before using map
         const seats = newBooking.seats ? newBooking.seats.map((seat) => seat.seatNumber) : [];
 
-        console.log("newBooking:", newBooking);
-        console.log("seats:", seats);
+        console.log("All bookings before modification:", allBookings);
+
+        seats.forEach((seatNumber) => {
+            const seatIndex = allBookings.findIndex((seat) => seat.seatNumber === seatNumber);
+            if (seatIndex !== -1) {
+                allBookings[seatIndex].booked = true;
+            }
+        });
+
+        console.log("All bookings after modification:", allBookings);
 
         const bookingToAdd = {
             name:newBooking.name,
             username: newBooking.username,
             email: newBooking.email,
-            title: newBooking.title || "", // Include title if available
-            room: newBooking.room || "", // Include room if available
-            time: newBooking.time || "", // Include time if available
-            seats: seats,
+            title: newBooking.title || "", 
+            room: newBooking.room || "", 
+            time: newBooking.time || "", 
+            seats: seats.map((seatNumber) => ({ seatNumber, booked: true })), // Ensure seats are marked as booked
             bookedAt: new Date(),
         };
-
-        console.log("bookingToAdd:", bookingToAdd);
 
         allBookings.push(bookingToAdd);
         setBookings(allBookings);

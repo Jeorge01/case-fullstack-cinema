@@ -7,6 +7,7 @@ function handleShowAllBookings(req, res) {
 }
 
 function handleCreateBookings(req, res) {
+    console.log("Received booking request:", req.body);
     const sessionKey = req.query.sessionKey;
 
     if (sessionKey && Object.values(userSessions).includes(sessionKey)) {
@@ -32,13 +33,15 @@ function handleCreateBookings(req, res) {
             name: user.name,
             username: user.username,
             email: user.email,
-            title: req.body.title,
-            room: req.body.room,
-            time: req.body.time,
+            title: req.body.title || "",
+            room: req.body.room || "",
+            time: req.body.time || "",
             seats: Array.isArray(req.body.seats) ? req.body.seats.map((seat) => ({ seatNumber: seat })) : [],
             bookedAt: new Date().toISOString(),
         };
 
+        console.log("New booking data:", newBooking);
+        
         createAndSendBooking(res, newBooking);
     } else {
         // User is not logged in
