@@ -91,7 +91,20 @@ function createAndSendBooking(res, newBooking) {
     }
 }
 
+async function handleFetchBookedSeats(req, res) {
+    const { movieId, showTime } = req.query;
+
+    try {
+        const bookedSeats = await bookingModel.fetchBookedSeats({ movieId, showTime });
+        res.json(bookedSeats);
+    } catch (error) {
+        console.error("Error fetching booked seats:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+}
+
 module.exports = {
     handleShowAllBookings,
     handleCreateBookings,
+    handleFetchBookedSeats
 };

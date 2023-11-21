@@ -16,6 +16,7 @@ function Booking() {
     useEffect(() => {
         // console.log('location.state:', location.state);
         // console.log('movie:', movie);
+        
     }, [location.state, movie]);
 
     return (

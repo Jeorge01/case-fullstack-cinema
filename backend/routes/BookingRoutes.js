@@ -6,4 +6,6 @@ BookingRouter.get("/showallbooking", BookingController.handleShowAllBookings);
 
 BookingRouter.post("/book", BookingController.handleCreateBookings);
 
+BookingRouter.get("/booked-seats", BookingController.handleFetchBookedSeats);
+
 module.exports = BookingRouter;

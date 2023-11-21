@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { showAlert } from "./AlertFunction";
 
-async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSeats, setSelectedShow) {
+async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSeats, setSelectedShow, fetchBookedSeats) {
     e.preventDefault();
     const name = document.querySelector(".nameInput").value;
     const email = document.querySelector(".emailInput").value;
@@ -26,26 +26,17 @@ async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSe
         return;
     }
 
-    const bookedAt = new Date();
-
-    console.log("movie.title:", movie.title);
-    console.log("selectedShow.room:", selectedShow.room);
-    console.log("selectedShow.time:", selectedShow.time);
-    console.log("checkedSeats:", checkedSeats);
-
-    const postData = {
-        name: name,
-        email: email,
-        bookedAt: bookedAt.toISOString(),
-        title: selectedShow ? selectedShow.title : "", 
-        room: selectedShow ? selectedShow.room : "", 
-        time: selectedShow ? selectedShow.time : "", 
-        seats: checkedSeats.map((seatNumber) => ({ seatNumber })),
-    };
-
-    console.log("postData:", postData);
-
     try {
+        const postData = {
+            name: name,
+            email: email,
+            bookedAt: new Date().toISOString(),
+            title: selectedShow ? movie.title : "",
+            room: selectedShow ? selectedShow.room : "",
+            time: selectedShow ? selectedShow.time : "",
+            seats: checkedSeats.map((seatNumber) => ({ seatNumber })),
+        };
+
         const response = await fetch("http://localhost:3123/book", {
             method: "POST",
             headers: {
@@ -57,8 +48,6 @@ async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSe
         if (!response.ok) {
             const errorMessage = `Failed to book the show. Server returned ${response.status}: ${response.statusText}`;
             console.error(errorMessage);
-
-            // Display an alert with the error message
             window.alert(errorMessage);
             return;
         }
@@ -68,9 +57,7 @@ async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSe
         setSelectedShow((prevShow) => {
             if (prevShow) {
                 const updatedSeats = prevShow.seats.map((seat) =>
-                    checkedSeats.includes(seat.seatNumber)
-                        ? { ...seat, booked: true }
-                        : seat
+                    checkedSeats.includes(seat.seatNumber) ? { ...seat, booked: true } : seat
                 );
                 return { ...prevShow, seats: updatedSeats };
             }
@@ -80,7 +67,6 @@ async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSe
         window.alert("Booking successful!");
     } catch (error) {
         console.error("Error booking the show:", error);
-
         window.alert("An unexpected error occurred. Please try again.");
     }
 }
@@ -88,16 +74,35 @@ async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSe
 const MoviePage = ({ movie }) => {
     const [selectedShow, setSelectedShow] = useState(null);
     const [checkedSeats, setCheckedSeats] = useState([]);
+    const [bookedSeats, setBookedSeats] = useState([]);
     const totalSeats = 36;
 
+    const fetchBookedSeats = async () => {
+        try {
+          const response = await fetch(
+            `http://localhost:3123/booked-seats?movieId=${movie.id}&showTime=${selectedShow.time}`
+          );
+    
+          if (!response.ok) {
+            console.error("Failed to fetch booked seats:", response.statusText);
+            return;
+          }
+    
+          const bookedSeatsData = await response.json();
+          setBookedSeats(bookedSeatsData);
+        } catch (error) {
+          console.error("Error fetching booked seats:", error);
+        }
+      };
+
     useEffect(() => {
-        // Reset selected show and checked seats when movie prop changes
-        setSelectedShow(null);
-        setCheckedSeats([]);
-    }, [movie]);
+        // Fetch booked seats on component mount or when movie changes
+        if (movie && selectedShow) {
+          fetchBookedSeats();
+        }
+      }, [movie, selectedShow]);
 
     const handleShowSelection = (show) => {
-        console.log("Selected Show:", show);
         setSelectedShow(show);
         setCheckedSeats([]); // Clear selected seats when a new show is selected
     };
@@ -154,50 +159,32 @@ const MoviePage = ({ movie }) => {
                         return (
                             <div key={rowIndex} className={`container gap50`}>
                                 {selectedShow
-                                    ? selectedShow.seats
-                                        .slice(startSeatIndex, endSeatIndex)
-                                        .map((seat, index) => (
-                                            <div
-                                                key={seat.seatNumber}
-                                                className={`${seat.seatNumber} parent ${
-                                                    seat.booked ? "alreadyBooked" : ""
-                                                } ${
-                                                    checkedSeats.includes(seat.seatNumber)
-                                                        ? "checked"
-                                                        : ""
-                                                }`}
-                                            >
-                                                <input
-                                                    className="seatCheckbox"
-                                                    type="checkbox"
-                                                    name={seat.seatNumber}
-                                                    onChange={() =>
-                                                        handleCheckboxClick(
-                                                            seat.seatNumber,
-                                                            seat.booked
-                                                        )
-                                                    }
-                                                    checked={checkedSeats.includes(
-                                                        seat.seatNumber
-                                                    )}
-                                                    disabled={
-                                                        seat.booked ||
-                                                        (checkedSeats.length === 6 &&
-                                                            !checkedSeats.includes(
-                                                                seat.seatNumber
-                                                            ))
-                                                    }
-                                                />
-                                            </div>
-                                        ))
+                                    ? selectedShow.seats.slice(startSeatIndex, endSeatIndex).map((seat, index) => (
+                                          <div
+                                              key={seat.seatNumber}
+                                              className={`${seat.seatNumber} parent ${
+                                                  seat.booked ? "alreadyBooked" : ""
+                                              } ${checkedSeats.includes(seat.seatNumber) ? "checked" : ""}`}
+                                          >
+                                              <input
+                                                  className="seatCheckbox"
+                                                  type="checkbox"
+                                                  name={seat.seatNumber}
+                                                  onChange={() => handleCheckboxClick(seat.seatNumber, seat.booked)}
+                                                  checked={checkedSeats.includes(seat.seatNumber)}
+                                                  disabled={
+                                                      seat.booked ||
+                                                      (checkedSeats.length === 6 &&
+                                                          !checkedSeats.includes(seat.seatNumber))
+                                                  }
+                                              />
+                                          </div>
+                                      ))
                                     : [...Array(12).keys()].map((index) => (
-                                        <div
-                                            key={`empty-${index}`}
-                                            className={`empty-${index} parent nonClickable`}
-                                        >
-                                            {/* Display non-clickable seats */}
-                                        </div>
-                                    ))}
+                                          <div key={`empty-${index}`} className={`empty-${index} parent nonClickable`}>
+                                              {/* Display non-clickable seats */}
+                                          </div>
+                                      ))}
                             </div>
                         );
                     })}
@@ -206,28 +193,13 @@ const MoviePage = ({ movie }) => {
 
             <form className="bookingSubmit" action="">
                 <div className="bookInputs container">
-                    <input
-                        className="nameInput"
-                        type="text"
-                        placeholder="Enter name"
-                    />
-                    <input
-                        className="emailInput"
-                        type="email"
-                        placeholder="Enter your Email and click on book"
-                    />
+                    <input className="nameInput" type="text" placeholder="Enter name" />
+                    <input className="emailInput" type="email" placeholder="Enter your Email and click on book" />
                     <input
                         className="confirmBooking"
                         type="submit"
                         onClick={(e) =>
-                            handleOnSubmit(
-                                e,
-                                movie,
-                                selectedShow,
-                                checkedSeats,
-                                setCheckedSeats,
-                                setSelectedShow
-                            )
+                            handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSeats, setSelectedShow)
                         }
                         value="Book"
                         required
