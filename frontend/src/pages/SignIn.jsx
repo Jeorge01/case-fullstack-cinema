@@ -9,14 +9,27 @@ function SignIn() {
         e.preventDefault();
 
         try {
+            const isEmail = usernameOrEmail.includes("@");
+
+            // Construct the payload based on the determination
+            const payload = {
+                password,
+            };
+
+            if (isEmail) {
+                payload.email = usernameOrEmail;
+            } else {
+                payload.username = usernameOrEmail;
+            }
+
             const response = await fetch("http://localhost:3123/signin", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ usernameOrEmail, password }),
+                body: JSON.stringify(payload),
             });
-
+            console.log(JSON.stringify(payload));
             if (!response.ok) {
                 // Handle authentication failure, show an error message, etc.
                 console.error(`Sign-in failed. Server returned ${response.status}: ${response.statusText}`);
@@ -51,6 +64,7 @@ function SignIn() {
                             placeholder="Enter username or email"
                             value={usernameOrEmail}
                             onChange={(e) => setUsernameOrEmail(e.target.value)}
+                            required
                         />
                         <input
                             type="password"
@@ -59,6 +73,7 @@ function SignIn() {
                             placeholder="Enter password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
+                            required
                         />
                     </div>
                     <input type="submit" value="Sign In" />
