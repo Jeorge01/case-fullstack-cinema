@@ -3,9 +3,11 @@ import { useLocation } from "react-router-dom";
 import React, { useRef } from 'react';
 import ScrollButton from "../components/ButtonScroll";
 import ReturnToMovies from "../components/ReturnToMovies";
+import BookingHeader from "../components/BookingHeader";
 import showButtons from "../components/ShowButtons";
 import MoviePage from "../components/TimeAndSeatComponent";
 import { useEffect } from "react";
+
 
 
 function Booking() {   
@@ -21,7 +23,7 @@ function Booking() {
 
     return (
         <div className="booking">
-            <ReturnToMovies />
+            <BookingHeader />
             <div className="container gap2">
                 <div>
                     <div>

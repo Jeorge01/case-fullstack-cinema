@@ -1,25 +1,34 @@
 const { getUsers, setUsers } = require("./Utils");
 const bookingModel = require("./BookingModel");
 
-function authenticate(username, password) {
-    const allUsers = getUsers();
-    const user = allUsers.find((user) => user.username === username);
+function authenticate(usernameOrEmail, password) {
+    const user = getUserByUsername(usernameOrEmail);
 
     if (!user) {
         return false;
     }
 
-    const isMatching = user.password === password;
+    let isMatching = user.password === password.trim();
+
+    console.log("usersadasdasdas", user)
+    console.log(user.password)
+    console.log(password.trim())
+
+    console.log("User found:", user);
+    console.log("Entered password:", password);
+    console.log("Is password valid?", isMatching);
 
     return isMatching;
 }
 
-console.log(authenticate("user1", "123sallad"));
-
 function showAllUsers() {
     const allUsers = getUsers();
 
+    console.log("All users:", allUsers);
+
     allUsers.forEach((user) => delete user.password);
+
+    console.log("Found user:", user);
 
     return allUsers;
 }
@@ -27,34 +36,62 @@ function showAllUsers() {
 function getUserByUsername(username) {
     const allUsers = getUsers();
 
-    const user = allUsers.find((user) => user.username === username);
+    console.log("All users:", allUsers);
+
+    let user = allUsers.find((user) => user.username.toLowerCase() === username.toLowerCase());
+
+    if (!user) {
+        // Change the variable name from usernameOrEmail to email
+        user = allUsers.find((user) => user.email.toLowerCase() === username.toLowerCase());
+    }
+
+    if (user) {
+
+        const allBookings = bookingModel.showAllBookings();
+        const bookingsByUser = allBookings.filter((booking) => booking.username === user.username);
+
+        user.bookings = bookingsByUser;
+    }
+
+    console.log("Found user:", user);
+
+    return user;
+}
+
+function getUserByEmail(email) {
+    const allUsers = getUsers();
+    return allUsers.find((user) => user.email === email);
+}
+
+function getUserByUsernameOrEmail(usernameOrEmail) {
+    const allUsers = getUsers();
+
+    const user = allUsers.find((user) => user.username === usernameOrEmail || user.email === usernameOrEmail);
+
+    if (!user) {
+        // Change the variable name from usernameOrEmail to email
+        user = allUsers.find((user) => user.email === username);
+    }
 
     if (user) {
         delete user.password;
+
+        const allBookings = bookingModel.showAllBookings();
+        const bookingsByUser = allBookings.filter((booking) => booking.username === user.username);
+
+        user.bookings = bookingsByUser;
     }
-
-    const allBookings = bookingModel.showAllBookings();
-    const bookingsByUser = allBookings.filter((booking) => booking.username === user.username);
-
-    user.bookings = bookingsByUser;
 
     return user;
 }
 
 function createUser(userData) {
-    function generateUserID() {
-        const timestamp = new Date().getTime().toString(16); // Convert timestamp to hexadecimal
-        const randomPart = Math.floor(Math.random() * 1000000).toString(16); // Generate a random hexadecimal number
-
-        return `${timestamp}-${randomPart}`;
-    }
-
     try {
         const allUsers = getUsers();
 
-        const usernameAleadyExists = allUsers.some((user) => user.username === userData.username);
+        const usernameAlreadyExists = allUsers.some((user) => user.username === userData.username);
 
-        if (usernameAleadyExists) {
+        if (usernameAlreadyExists) {
             return {
                 success: false,
                 message: "Username is already in use. Please choose another username",
@@ -103,9 +140,9 @@ function updateUser(userData) {
 
         // Check if the new username is provided and different from the existing one
         if (userData.username && userData.username !== userToUpdate.username) {
-            const usernameAleadyExists = allUsers.some((user) => user.username === userData.username);
+            const usernameAlreadyExists = allUsers.some((user) => user.username === userData.username);
 
-            if (usernameAleadyExists) {
+            if (usernameAlreadyExists) {
                 return {
                     success: false,
                     message: "Username is already in use. Please choose another username",
@@ -137,9 +174,18 @@ function updateUser(userData) {
     }
 }
 
+function generateUserID() {
+    const timestamp = new Date().getTime().toString(16); // Convert timestamp to hexadecimal
+    const randomPart = Math.floor(Math.random() * 1000000).toString(16); // Generate a random hexadecimal number
+
+    return `${timestamp}-${randomPart}`;
+}
+
 module.exports = {
     showAllUsers,
     getUserByUsername,
+    getUserByEmail,
+    getUserByUsernameOrEmail,
     authenticate,
     createUser,
     updateUser,

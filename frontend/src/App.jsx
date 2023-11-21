@@ -3,8 +3,11 @@ import {useEffect, useState} from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Booking from './pages/Booking';
 import Home from './pages/Home';
-
-
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import UserSettings from './pages/UserSettings';
+import ChangeData from './pages/ChangeData';
+import SeeBookings from './pages/SeeBookings';
 
 function App() {
 
@@ -23,8 +26,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path='/booking/*' element={<Booking />} />
           <Route path='/home' element={<Home />} />
+          <Route path='/booking/*' element={<Booking />} />
+          <Route path='/signIn/*' element={<SignIn />} />
+          <Route path='/signUp/*' element={<SignUp />} />
+          <Route path='/userSettings/*' element={<UserSettings />} />
+          <Route path='/changeData/*' element={<ChangeData />} />
+          <Route path='/seeBookings/*' element={<SeeBookings />} />
           {/* <Route path='*' element={<NoPage />} /> */}
         </Routes>
       </BrowserRouter>

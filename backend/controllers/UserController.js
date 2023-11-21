@@ -8,20 +8,43 @@ function getUserFromSession(sessionKey) {
 }
 
 function handleSignIn(req, res) {
-    const { username, password } = req.body;
+    const { email, username, password } = req.body;
 
-    const isAuthenticated = UserModel.authenticate(username, password);
+    console.log("Received credentials:", email || username, password);
 
-    if (!isAuthenticated) {
-        console.log("signin failed");
+    let user;
+
+    if (email) {
+        user = UserModel.getUserByEmail(email);
+    } else if (username) {
+        user = UserModel.getUserByUsername(username);
+    }
+
+    console.log("Found user:", user);
+
+    if (!user) {
+        console.log("User not found");
+        return res.status(401).send("Not authenticated");
+    }
+
+    console.log("User found:", user);
+
+    const isPasswordValid = UserModel.authenticate(user.username, password);
+
+    console.log("Is password valid?", isPasswordValid);
+
+    if (!isPasswordValid) {
+        console.log("Invalid password");
         return res.status(401).send("Not authenticated");
     }
 
     const sessionKey = crypto.randomBytes(20).toString("base64");
-    userSessions[username] = sessionKey;
+    userSessions[user.username] = sessionKey;
 
+    console.log("User authenticated successfully");
     res.send({ sessionKey });
 }
+
 
 function handleShowAllUsers(req, res) {
     const allUsersData = UserModel.showAllUsers();
