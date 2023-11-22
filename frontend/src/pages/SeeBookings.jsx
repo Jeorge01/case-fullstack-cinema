@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-function SeeBookings() {
+function SeeBookings({ isLoggedIn }) {
+  console.log("SeeBookings - isLoggedIn:", isLoggedIn);
 
     return (
         <div className='SeeBookings'>

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import ReturnToMovies from "../components/ReturnToMovies";
 
-function SignIn() {
+function SignIn({ setIsLoggedIn }) {
     const [usernameOrEmail, setUsernameOrEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    // const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -57,6 +57,7 @@ function SignIn() {
 
             // Assuming successful sign-in, setIsLoggedIn(true)
             setIsLoggedIn(true);
+            console.log("isLoggedIn:", setIsLoggedIn);
             navigate('/home');
         } catch (error) {
             // Handle unexpected errors
@@ -74,7 +75,7 @@ function SignIn() {
                     </div>
                 </header>
                 <h1>Sign In</h1>
-                <form onSubmit={handleSignIn}>
+                <form onSubmit={(e) => handleSignIn(e, setIsLoggedIn)}>
                     <div>
                         <input
                             type="text"

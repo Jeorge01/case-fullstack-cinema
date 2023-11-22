@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import HomeHeader from "../components/HomeHeader";
 import DataFetcher from "../components/DataFetcher";
 
-function Home() {
+function Home({ isLoggedIn }) {
     const [seatData, setSeatData] = useState([]); // Store the seat booking data
     const [checkboxes, setCheckboxes] = useState([]); // Store the checkbox statuses
 
@@ -18,8 +18,13 @@ function Home() {
 
     const [searchString, setSearchString] = useState("");
 
+    useEffect(() => {
+        console.log("Home - isLoggedIn:", isLoggedIn);
+    }, [isLoggedIn]);
+
     // trigger the arrow function inside useEffect ONE time before loading
     useEffect(() => {
+        console.log("Home - useEffect for fetching data");
         const fetchData = async () => {
             try {
                 const response = await fetch("http://localhost:3123/movies");
@@ -53,6 +58,8 @@ function Home() {
     const filteredMovies = cinemaData.cinema.movies.filter((movie) =>
         movie.title.toLowerCase().includes(searchString.toLowerCase())
     );
+
+    console.log("Home - isLoggedIn (render):", isLoggedIn);
 
     return (
         <div className="home">

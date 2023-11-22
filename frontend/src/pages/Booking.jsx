@@ -10,7 +10,8 @@ import { useEffect } from "react";
 
 
 
-function Booking() {   
+function Booking({ isLoggedIn }) {   
+    console.log("Booking - isLoggedIn:", isLoggedIn);
     const location = useLocation();
     const { movie } = location.state || { movie: {} };
     const contentRef = useRef(null);

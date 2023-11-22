@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-function UserSettings() {
+function UserSettings({ isLoggedIn }) {
+  console.log("UserSettings - isLoggedIn:", isLoggedIn);
 
     return (
         <div className='UserSettings'>
