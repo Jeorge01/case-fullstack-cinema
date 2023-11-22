@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import ReturnToMovies from "../components/ReturnToMovies";
 
 function SignIn() {
     const [usernameOrEmail, setUsernameOrEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // Check for the existence of the session cookie on component mount
+        const sessionKey = document.cookie.replace(/(?:(?:^|.*;\s*)sessionKey\s*=\s*([^;]*).*$)|^.*$/, "$1");
+
+        if (sessionKey) {
+            // User is logged in, redirect or perform other actions
+            setIsLoggedIn(true);
+            // Redirect logic or other actions can be added here
+        }
+    }, []);
 
     const handleSignIn = async (e) => {
         e.preventDefault();
@@ -39,6 +53,11 @@ function SignIn() {
 
             // Authentication successful, you might want to redirect the user or perform other actions
             console.log("Sign-in successful");
+            const { sessionKey } = await response.json();
+
+            // Assuming successful sign-in, setIsLoggedIn(true)
+            setIsLoggedIn(true);
+            navigate('/home');
         } catch (error) {
             // Handle unexpected errors
             console.error("An unexpected error occurred during sign-in:", error);
