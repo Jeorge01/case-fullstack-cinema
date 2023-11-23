@@ -63,7 +63,7 @@ function Home({ isLoggedIn }) {
 
     return (
         <div className="home">
-            <HomeHeader setSearchString={setSearchString} searchString={searchString} />
+            <HomeHeader isLoggedIn={isLoggedIn} setSearchString={setSearchString} searchString={searchString} />
             {/* <h1>hej</h1> */}
             <div className="container gap cardboxes">
                 {filteredMovies.map((movie) => (

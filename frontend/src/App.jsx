@@ -33,8 +33,8 @@ function App() {
                         <Route index element={<Home />} />
                         <Route path="/home" element={<Home />} />
                         <Route path="/booking/*" element={<Booking />} />
-                        <Route path="/signIn/*" element={<SignIn setIsLoggedIn={setIsLoggedIn} />} />
-                        <Route path="/signUp/*" element={<SignUp />} />
+                        <Route path="/signIn/" element={<SignIn setIsLoggedIn={setIsLoggedIn} />} />
+                        <Route path="/signUp/" element={<SignUp />} />
                         <Route path="/userSettings/*" element={<UserSettings />} />
                         <Route path="/changeData/*" element={<ChangeData />} />
                         <Route path="/seeBookings/*" element={<SeeBookings />} />
