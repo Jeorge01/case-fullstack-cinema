@@ -7,6 +7,21 @@ function showAllBookings() {
     return allBookings;
 }
 
+function fetchBookedSeats({ movieId, showTime }) {
+    try {
+        const allBookings = getBookings();
+
+        const bookedSeats = allBookings
+            .filter(booking => booking.movieId === movieId && booking.showTime === showTime)
+            .flatMap(booking => booking.seats);
+
+        return bookedSeats;
+    } catch (error) {
+        console.error("Error fetching booked seats:", error);
+        throw error;
+    }
+}
+
 function createBookings(newBooking) {
     try {
         const allBookings = getBookings();
@@ -110,4 +125,4 @@ function removeBookings() {
     // You can implement the logic for removing bookings here
 }
 
-module.exports = { showAllBookings, createBookings, removeBookings };
+module.exports = { showAllBookings, createBookings, removeBookings, fetchBookedSeats };
