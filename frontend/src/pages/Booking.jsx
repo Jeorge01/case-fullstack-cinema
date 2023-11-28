@@ -49,7 +49,7 @@ function Booking({ isLoggedIn }) {
             <div className="bookigSection" ref={contentRef}>
                 <h4 className="when">Pick a time and one or multiple seats</h4>
 
-                <MoviePage movie={movie} contentRef={contentRef} />
+                <MoviePage movie={movie} contentRef={contentRef} isLoggedIn={isLoggedIn} />
 
                 <div className="someSpace"></div>
             </div>

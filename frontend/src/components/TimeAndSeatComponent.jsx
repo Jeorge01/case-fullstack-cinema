@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { showAlert } from "./AlertFunction";
 
-async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSeats, setSelectedShow, fetchBookedSeats) {
+async function handleOnSubmit(
+    e,
+    movie,
+    selectedShow,
+    checkedSeats,
+    setCheckedSeats,
+    setSelectedShow,
+    fetchBookedSeats,
+    isLoggedIn
+) {
     e.preventDefault();
     const name = document.querySelector(".nameInput").value;
     const email = document.querySelector(".emailInput").value;
@@ -16,14 +25,16 @@ async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSe
         return;
     }
 
-    if (name.length < 2) {
-        showAlert("Please enter a valid name with at least 2 letters.");
-        return;
-    }
+    if (!isLoggedIn) {
+        if (name.length < 2) {
+            showAlert("Please enter a valid name with at least 2 letters.");
+            return;
+        }
 
-    if (!email || !/\S+@\S+\.\S+/.test(email)) {
-        showAlert("Please enter a valid email address.");
-        return;
+        if (!email || !/\S+@\S+\.\S+/.test(email)) {
+            showAlert("Please enter a valid email address.");
+            return;
+        }
     }
 
     try {
@@ -71,7 +82,7 @@ async function handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSe
     }
 }
 
-const MoviePage = ({ movie }) => {
+const MoviePage = ({ movie, isLoggedIn }) => {
     const [selectedShow, setSelectedShow] = useState(null);
     const [checkedSeats, setCheckedSeats] = useState([]);
     const [bookedSeats, setBookedSeats] = useState([]);
@@ -79,28 +90,28 @@ const MoviePage = ({ movie }) => {
 
     const fetchBookedSeats = async () => {
         try {
-          const response = await fetch(
-            `http://localhost:3123/booked-seats?movieId=${movie.id}&showTime=${selectedShow.time}`
-          );
-    
-          if (!response.ok) {
-            console.error("Failed to fetch booked seats:", response.statusText);
-            return;
-          }
-    
-          const bookedSeatsData = await response.json();
-          setBookedSeats(bookedSeatsData);
+            const response = await fetch(
+                `http://localhost:3123/booked-seats?movieId=${movie.id}&showTime=${selectedShow.time}`
+            );
+
+            if (!response.ok) {
+                console.error("Failed to fetch booked seats:", response.statusText);
+                return;
+            }
+
+            const bookedSeatsData = await response.json();
+            setBookedSeats(bookedSeatsData);
         } catch (error) {
-          console.error("Error fetching booked seats:", error);
+            console.error("Error fetching booked seats:", error);
         }
-      };
+    };
 
     useEffect(() => {
         // Fetch booked seats on component mount or when movie changes
         if (movie && selectedShow) {
-          fetchBookedSeats();
+            fetchBookedSeats();
         }
-      }, [movie, selectedShow]);
+    }, [movie, selectedShow]);
 
     const handleShowSelection = (show) => {
         setSelectedShow(show);
@@ -193,18 +204,52 @@ const MoviePage = ({ movie }) => {
 
             <form className="bookingSubmit" action="">
                 <div className="bookInputs container">
-                    <input className="nameInput nameOrEmailInput" type="text" placeholder="Enter name" />
-                    <input className="emailInput nameOrEmailInput" type="email" placeholder="Enter Email" />
-                    <input
-                        className="confirmBooking"
-                        type="submit"
-                        onClick={(e) =>
-                            handleOnSubmit(e, movie, selectedShow, checkedSeats, setCheckedSeats, setSelectedShow)
-                        }
-                        value="Book"
-                        required
-                        disabled={isButtonDisabled}
-                    />
+                    {isLoggedIn ? (
+                        // Render this when the user is logged in
+                        <>
+                            <input
+                                className="confirmBooking"
+                                type="submit"
+                                onClick={(e) =>
+                                    handleOnSubmit(
+                                        e,
+                                        movie,
+                                        selectedShow,
+                                        checkedSeats,
+                                        setCheckedSeats,
+                                        setSelectedShow
+                                    )
+                                }
+                                value="Book"
+                                required
+                                disabled={isButtonDisabled}
+                            />
+                        </>
+                    ) : (
+                        // Render this when the user is not logged in
+                        <>
+                            <input className="nameInput nameOrEmailInput" type="text" placeholder="Enter name" />
+                            <input className="emailInput nameOrEmailInput" type="email" placeholder="Enter Email" />
+                            <input
+                                className="confirmBooking"
+                                type="submit"
+                                onClick={(e) =>
+                                    handleOnSubmit(
+                                        e,
+                                        movie,
+                                        selectedShow,
+                                        checkedSeats,
+                                        setCheckedSeats,
+                                        setSelectedShow
+                                    )
+                                }
+                                value="Book"
+                                required
+                                disabled={isButtonDisabled}
+                            />
+                        </>
+                    )}
+                    {console.log("user not logged in")}
                 </div>
             </form>
         </div>

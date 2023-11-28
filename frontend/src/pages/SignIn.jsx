@@ -85,6 +85,7 @@ function SignIn({ setIsLoggedIn }) {
                             value={usernameOrEmail}
                             onChange={(e) => setUsernameOrEmail(e.target.value)}
                             required
+                            autoFocus
                         />
                         <input
                             type="password"
