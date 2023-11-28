@@ -331,22 +331,13 @@ div.seats div {
     margin-top: 25px;
 }
 
-.emailInput {
-    width: 687px;
+.nameOrEmailInput {
+    width: 444px;
     height: 76px;
-    border-radius: 63px 0px 0px 63px;
-    background: var(
-        --input,
-        linear-gradient(
-            180deg,
-            rgba(147, 147, 147, 0.42) 0%,
-            rgba(78, 78, 78, 0.42) 99.99%,
-            rgba(217, 217, 217, 0) 100%
-        )
-    );
+    border-radius: 63px;
+    background: var(--input, linear-gradient( 180deg, rgba(147, 147, 147, 0.42) 0%, rgba(78, 78, 78, 0.42) 99.99%, rgba(217, 217, 217, 0) 100% ) );
     outline: none;
     border: none;
-
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: 26px;
@@ -354,12 +345,13 @@ div.seats div {
     font-weight: 400;
     line-height: normal;
     padding-left: 30px;
+    margin-right: 30px;
 }
 
 .confirmBooking {
     width: 444px;
     height: 76px;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 15px;
     background: #f4f4f4;
     outline: none;
     border: none;

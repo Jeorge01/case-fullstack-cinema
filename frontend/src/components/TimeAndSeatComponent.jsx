@@ -193,8 +193,8 @@ const MoviePage = ({ movie }) => {
 
             <form className="bookingSubmit" action="">
                 <div className="bookInputs container">
-                    <input className="nameInput" type="text" placeholder="Enter name" />
-                    <input className="emailInput" type="email" placeholder="Enter your Email and click on book" />
+                    <input className="nameInput nameOrEmailInput" type="text" placeholder="Enter name" />
+                    <input className="emailInput nameOrEmailInput" type="email" placeholder="Enter Email" />
                     <input
                         className="confirmBooking"
                         type="submit"
