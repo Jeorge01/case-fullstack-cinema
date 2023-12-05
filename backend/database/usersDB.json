@@ -19,5 +19,6 @@
         "username": "balle3",
         "email": "kalle1@kalle.com",
         "password": "1234kalle"
-    }
+    },
+    { "userID": "18c376712c1-b3f66", "name": "hejsan", "username": "hej", "email": "hej@hej.com", "password": "hej" }
 ]

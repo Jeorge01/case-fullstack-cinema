@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import SignIn from "../pages/SignIn";
+import SignUp from "../pages/SignUp";
 import Home from "../pages/Home"; // Import your Home component
 import Booking from "../pages/Booking";
 import UserSettings from "../pages/UserSettings";
@@ -15,6 +16,7 @@ const AuthContainer = () => {
         <Routes>
             {/* Render the SignIn component and pass isLoggedIn and setIsLoggedIn as props */}
             <Route path="/signin" element={<SignIn isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/signUp/" element={<SignUp />} />
 
             {/* Render the Home component and pass isLoggedIn as a prop */}
             <Route path="/home" element={<Home isLoggedIn={isLoggedIn} />} />
