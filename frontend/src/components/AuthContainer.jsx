@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import SignIn from "../pages/SignIn";
@@ -14,6 +15,7 @@ const AuthContainer = () => {
 
     return (
         <Routes>
+            <Route index element={<Home />} />
             {/* Render the SignIn component and pass isLoggedIn and setIsLoggedIn as props */}
             <Route path="/signin" element={<SignIn isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/signUp/" element={<SignUp />} />
