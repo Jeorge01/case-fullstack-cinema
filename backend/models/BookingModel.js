@@ -1,6 +1,7 @@
 const { getBookings, setBookings } = require("./Utils");
 const path = require("path");
 const fs = require("fs");
+const { writeFile } = require("fs").promises;
 
 function showAllBookings() {
     const allBookings = getBookings();
@@ -12,8 +13,8 @@ function fetchBookedSeats({ movieId, showTime }) {
         const allBookings = getBookings();
 
         const bookedSeats = allBookings
-            .filter(booking => booking.movieId === movieId && booking.showTime === showTime)
-            .flatMap(booking => booking.seats);
+            .filter((booking) => booking.movieId === movieId && booking.showTime === showTime)
+            .flatMap((booking) => booking.seats);
 
         return bookedSeats;
     } catch (error) {
@@ -22,10 +23,27 @@ function fetchBookedSeats({ movieId, showTime }) {
     }
 }
 
-function createBookings(newBooking) {
+async function createBookings(newBooking) {
     try {
         const allBookings = getBookings();
-        const seats = newBooking.seats ? newBooking.seats.map((seat) => seat.seatNumber) : [];
+        const seats = newBooking.seats ? newBooking.seats.map((seatObj) => seatObj.seatNumber) : [];
+
+        // Validate seat numbers
+        const isValidSeatNumber = (seatNumber) => {
+            // Implement your validation logic here
+            // For example, check if seatNumber follows a specific format
+            const seatNumberRegex = /^[A-Z]\d+$/;
+            return seatNumberRegex.test(seatNumber);
+        };
+
+        // Validate each seat number in the booking
+        const areSeatNumbersValid = seats.every((seatNumber) => isValidSeatNumber(seatNumber));
+
+        if (!areSeatNumbersValid) {
+            console.error("Error: Invalid seatNumberObj in the seats array.");
+            // Optionally, reject the booking request or take appropriate action
+            throw new Error("Invalid seatNumberObj in the seats array.");
+        }
 
         console.log("Received booking request:", newBooking);
         console.log("Seats to be booked:", seats);
@@ -37,87 +55,143 @@ function createBookings(newBooking) {
             throw new Error("cinemaDB.json file not found");
         }
 
-        try {
-            const cinemaDB = JSON.parse(fs.readFileSync(cinemaDBPath, { encoding: "utf-8" }));
+        const cinemaDB = loadCinemaDB(cinemaDBPath);
 
-            console.log("cinemaDB before modification:", cinemaDB);
+        const selectedShow = getSelectedShow(cinemaDB, newBooking);
 
-            if (!cinemaDB || !cinemaDB.cinema || !cinemaDB.cinema.movies) {
-                console.error("Error: cinemaDB.cinema.movies is undefined");
-                throw new Error("Invalid cinemaDB file");
-            }
+        checkIfSeatsAlreadyBooked(selectedShow, seats);
 
-            const movieWithShow = cinemaDB.cinema.movies.find((movie) =>
-                movie.shows.some((s) => s.room === newBooking.room && s.time === newBooking.time)
-            );
+        bookSeats(selectedShow, seats);
 
-            if (!movieWithShow) {
-                console.error("Error: No matching show found.");
-                throw new Error("No matching show found.");
-            }
+        console.log("cinemaDB after modification:", cinemaDB);
 
-            const selectedShow = movieWithShow.shows.find(
-                (s) => s.room === newBooking.room && s.time === newBooking.time
-            );
+        writeCinemaDBFile(cinemaDB, cinemaDBPath);
 
-            if (!selectedShow || !selectedShow.seats) {
-                console.error("Error: Selected show or seats are undefined.");
-                throw new Error("Invalid show in cinemaDB file");
-            }
+        const bookedSeats = seats.map((seatNumber) => ({ seatNumber, booked: true }));
 
-            seats.forEach((seatNumberObj) => {
-                const seatNumber = seatNumberObj.seatNumber;
-                const seatIndex = selectedShow.seats.findIndex((seat) => seat.seatNumber === seatNumber);
+        const bookingToAdd = {
+            name: newBooking.name,
+            username: newBooking.username,
+            email: newBooking.email,
+            title: newBooking.title || "",
+            room: newBooking.room || "",
+            time: newBooking.time || "",
+            seats: bookedSeats,
+            bookedAt: new Date(),
+            movieId: newBooking.movieId,
+        };
 
-                if (seatIndex !== -1) {
-                    selectedShow.seats[seatIndex].booked = true;
-                } else {
-                    console.error(`Error: Seat ${seatNumber} not found in the selected show.`);
-                }
-            });
+        // console.log("All bookings before modification:", allBookings);
 
-            console.log("cinemaDB after modification:", cinemaDB);
+        allBookings.push(bookingToAdd);
+        setBookings(allBookings);
 
-            fs.writeFileSync(cinemaDBPath, JSON.stringify(cinemaDB, null, 2));
+        // console.log("All bookings after modification:", allBookings);
 
-            const bookedSeats = seats.map((seatNumber) => ({ seatNumber, booked: true }));
+        const writeResult = await writeCinemaDBFile(cinemaDB, cinemaDBPath);
+        console.log("writeResult:", writeResult);
 
-            // Include movieId and showTime in the bookingToAdd object
-            const bookingToAdd = {
-                name: newBooking.name,
-                username: newBooking.username,
-                email: newBooking.email,
-                title: newBooking.title || "",
-                room: newBooking.room || "",
-                time: newBooking.time || "",
-                seats: bookedSeats,
-                bookedAt: new Date(),
-                // Include movieId and showTime in the booking
-                movieId: newBooking.movieId,
-                showTime: newBooking.showTime,
-            };
+        console.log("Booking successful:", bookingToAdd);
 
-            console.log("All bookings before modification:", allBookings);
+        // Add this line to log the bookedSeats array
+        console.log("bookedSeats:", bookedSeats);
 
-            allBookings.push(bookingToAdd);
-            setBookings(allBookings);
-
-            console.log("All bookings after modification:", allBookings);
-
-            console.log("Booking successful:", bookingToAdd);
-
-            return {
-                success: true,
-                message: "Booking successful",
-                data: bookingToAdd,
-            };
-        } catch (error) {
-            console.error("Error parsing cinemaDB file:", error);
-            throw error;
-        }
+        return {
+            success: true,
+            message: "Booking successful",
+            data: bookingToAdd,
+        };
     } catch (error) {
         console.error("Error in createBookings:", error);
         throw error;
+    }
+}
+
+function loadCinemaDB(cinemaDBPath) {
+    try {
+        const cinemaDB = JSON.parse(fs.readFileSync(cinemaDBPath, { encoding: "utf-8" }));
+        console.log("cinemaDB before modification:", cinemaDB);
+        return cinemaDB;
+    } catch (error) {
+        console.error("Error parsing cinemaDB file:", error);
+        throw error;
+    }
+}
+
+function getSelectedShow(cinemaDB, newBooking) {
+    const movieIndex = cinemaDB.cinema.movies.findIndex((movie) =>
+        movie.shows.some((s) => s.room === newBooking.room && s.time === newBooking.time)
+    );
+
+    if (movieIndex === -1) {
+        console.error("Error: No matching show found.");
+        throw new Error("No matching show found.");
+    }
+
+    const movieWithShow = cinemaDB.cinema.movies.find((movie) =>
+        movie.shows.some((s) => s.room === newBooking.room && s.time === newBooking.time)
+    );
+
+    if (!movieWithShow) {
+        console.error("Error: No matching show found.");
+        throw new Error("No matching show found.");
+    }
+
+    const selectedShow = movieWithShow.shows.find((s) => s.room === newBooking.room && s.time === newBooking.time);
+
+    if (!selectedShow || !selectedShow.seats) {
+        console.error("Error: Selected show or seats are undefined.");
+        throw new Error("Invalid show in cinemaDB file");
+    }
+
+    return selectedShow;
+}
+
+function checkIfSeatsAlreadyBooked(selectedShow, seats) {
+    const seatsToBook = seats.map((seat) => seat.seatNumber);
+
+    const alreadyBookedSeats = seatsToBook.filter((seatNumber) => {
+        const seatIndex = selectedShow.seats.findIndex((seat) => seat.seatNumber === seatNumber);
+        return seatIndex !== -1 && selectedShow.seats[seatIndex].booked;
+    });
+
+    if (alreadyBookedSeats.length > 0) {
+        console.error(`Error: Seats ${alreadyBookedSeats.join(", ")} are already booked.`);
+        throw new Error(`Seats ${alreadyBookedSeats.join(", ")} are already booked.`);
+    }
+}
+
+function bookSeats(selectedShow, seats) {
+    seats.forEach((seatNumberObj) => {
+        const seatNumber = seatNumberObj.seatNumber;
+
+        // Find the seat in the selected show
+        const seat = selectedShow.seats.find((seat) => seat.seatNumber === seatNumber);
+
+        if (seat) {
+            // Update the booked status of the seat
+            seat.booked = true;
+        } else {
+            console.error(`Error: Seat ${seatNumber} not found in the selected show.`);
+            // Optionally, handle this error case
+        }
+    });
+}
+
+async function writeCinemaDBFile(cinemaDB, cinemaDBPath) {
+    try {
+        console.log("writeCinemaDBFile function called");
+        console.log("cinemaDBPath:", cinemaDBPath);
+        console.log("cinemaDB before write:", cinemaDB);
+
+        // Use fs.promises.writeFile directly
+        await writeFile(cinemaDBPath, JSON.stringify(cinemaDB, null, 2));
+
+        console.log("cinemaDB file updated successfully.");
+        return "Write successful"; 
+    } catch (writeError) {
+        console.error("Error writing cinemaDB file:", writeError);
+        throw writeError;
     }
 }
 
