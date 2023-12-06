@@ -65,7 +65,9 @@ async function createBookings(newBooking, req) {
 
         console.log("cinemaDB after modification:", cinemaDB);
 
-        // writeCinemaDBFile(cinemaDB, cinemaDBPath);
+        // Uncomment the following line to update the cinemaDB file
+        const writeResult = await writeCinemaDBFile(cinemaDB, cinemaDBPath);
+        console.log("writeResult:", writeResult);
 
         const bookedSeats = seats.map((seatNumber) => ({ seatNumber, booked: true }));
 
@@ -81,20 +83,14 @@ async function createBookings(newBooking, req) {
             movieId: newBooking.movieId,
         };
 
-        // console.log("All bookings before modification:", allBookings);
-
+        // Add the booking details to allBookings
         allBookings.push(bookingToAdd);
         setBookings(allBookings);
 
-        // console.log("All bookings after modification:", allBookings);
-
-        const writeResult = await writeCinemaDBFile(cinemaDB, cinemaDBPath);
-        console.log("writeResult:", writeResult);
+        // Log the bookedSeats array
+        console.log("bookedSeats:", bookedSeats);
 
         console.log("Booking successful:", bookingToAdd);
-
-        // Add this line to log the bookedSeats array
-        console.log("bookedSeats:", bookedSeats);
 
         return {
             success: true,
@@ -148,7 +144,7 @@ function getSelectedShow(cinemaDB, newBooking) {
 }
 
 function checkIfSeatsAlreadyBooked(selectedShow, seats) {
-    const seatsToBook = seats.map((seat) => seat.seatNumber);
+    const seatsToBook = seats.map((seatNumberObj) => seatNumberObj.seatNumber);
 
     const alreadyBookedSeats = seatsToBook.filter((seatNumber) => {
         const seatIndex = selectedShow.seats.findIndex((seat) => seat.seatNumber === seatNumber);
@@ -162,9 +158,7 @@ function checkIfSeatsAlreadyBooked(selectedShow, seats) {
 }
 
 function bookSeats(selectedShow, seats) {
-    seats.forEach((seatNumberObj) => {
-        const seatNumber = seatNumberObj.seatNumber;
-
+    seats.forEach((seatNumber) => {
         // Find the seat in the selected show
         const seat = selectedShow.seats.find((seat) => seat.seatNumber === seatNumber);
 
@@ -188,7 +182,7 @@ async function writeCinemaDBFile(cinemaDB, cinemaDBPath) {
         await writeFile(cinemaDBPath, JSON.stringify(cinemaDB, null, 2));
 
         console.log("cinemaDB file updated successfully.");
-        return "Write successful"; 
+        return "Write successful";
     } catch (writeError) {
         console.error("Error writing cinemaDB file:", writeError);
         throw writeError;

@@ -107,13 +107,13 @@ async function handleCreateBookings(req, res) {
     }
 }
 
-function createAndSendBooking(res, newBooking) {
-    // Ensure that createBookings is a function in bookingModel
-    if (typeof bookingModel.createBookings === "function") {
-        // Log the state of the booking object before it gets added to the database
-        console.log("Booking object before addition:", newBooking);
+async function createAndSendBooking(res, newBooking) {
+    try {
+        const createdBooking = await bookingModel.createBookings(newBooking);
 
-        const createdBooking = bookingModel.createBookings(newBooking);
+        console.log("Created booking details:", createdBooking);
+
+        // Verify the seat status in the createdBooking object
 
         const seatsInfo = newBooking.seats.map((seat) => ({
             seatNumber: seat.seatNumber || "",
@@ -132,10 +132,13 @@ function createAndSendBooking(res, newBooking) {
             },
         };
 
+        // Log the response before sending
+        console.log("Response:", response);
+
         return res.status(201).json(response);
-    } else {
-        console.error("createBookings is not a function in bookingModel");
-        return res.status(500).send("Internal Server Error");
+    } catch (error) {
+        console.error("Error creating booking:", error);
+        return res.status(500).json({ success: false, message: "Internal Server Error" });
     }
 }
 

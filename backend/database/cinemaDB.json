@@ -16,15 +16,15 @@
             "seats": [
               {
                 "seatNumber": "A1",
-                "booked": false
+                "booked": true
               },
               {
                 "seatNumber": "A2",
-                "booked": false
+                "booked": true
               },
               {
                 "seatNumber": "A3",
-                "booked": false
+                "booked": true
               },
               {
                 "seatNumber": "A4",
