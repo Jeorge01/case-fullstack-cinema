@@ -16,12 +16,16 @@ async function handleCreateBookings(req, res) {
             const username = getUserFromSession(sessionKey);
             const user = UserModel.getUserByUsername(username);
 
+            console.log("Logged-in user details:", user);
+
             // Validate that the provided user data matches the logged-in user
             const mismatchedProps = ["userID", "name", "username", "email"].filter(
                 (prop) => req.body[prop] !== user[prop]
             );
 
             if (mismatchedProps.length > 0) {
+                console.error("Forbidden: Booking data does not match the logged-in user.");
+                console.error("Invalid properties:", mismatchedProps);
                 return res
                     .status(403)
                     .send(
@@ -31,10 +35,12 @@ async function handleCreateBookings(req, res) {
                     );
             }
 
+            console.log("Request body:", req.body);
+
             const newBooking = {
                 userID: user.userID,
                 name: user.name,
-                username: user.username,
+                username: user.username || "",
                 email: user.email,
                 title: req.body.title || "",
                 room: req.body.room || "",
@@ -43,6 +49,7 @@ async function handleCreateBookings(req, res) {
                     ? req.body.seats.map((seat) => (seat && seat.seatNumber ? { seatNumber: seat.seatNumber } : ""))
                     : [],
                 bookedAt: new Date().toISOString(),
+                movieId: req.body.movieId || "",
             };
 
             console.log("New booking data:", newBooking);
@@ -52,30 +59,37 @@ async function handleCreateBookings(req, res) {
             // User is not logged in
 
             // Validate that only allowed properties are present
-            const allowedProps = ["name", "email", "title", "room", "time", "seats", "bookedAt"];
+            const allowedProps = ["name", "email", "title", "room", "time", "seats", "bookedAt", "movieId"];
             const invalidProps = Object.keys(req.body).filter((prop) => !allowedProps.includes(prop));
 
             if (sessionKey) {
                 // Invalid session key
+                console.error("Not authorized: Invalid session key");
                 return res.status(401).send("Not authorized: Invalid session key");
             }
 
             if (invalidProps.length > 0) {
                 // Invalid properties for non-logged-in user
+                console.error("Invalid properties for non-logged-in user:", invalidProps);
                 return res.status(400).send(`Invalid properties for non-logged-in user: ${invalidProps.join(", ")}`);
             }
+
+            console.log("Request body:", req.body);
 
             const newBooking = {
                 name: req.body.name,
                 email: req.body.email,
-                title: req.body.title,
-                room: req.body.room,
-                time: req.body.time,
+                title: req.body.title || "",
+                room: req.body.room || "",
+                time: req.body.time || "",
                 seats: Array.isArray(req.body.seats)
                     ? req.body.seats.map((seat) => (seat && seat.seatNumber ? { seatNumber: seat.seatNumber } : ""))
                     : [],
                 bookedAt: new Date().toISOString(),
+                movieId: req.body.movieId || "",
             };
+
+            console.log("New booking data:", newBooking);
 
             createAndSendBooking(res, newBooking);
         }
@@ -84,8 +98,10 @@ async function handleCreateBookings(req, res) {
         console.error("Error creating booking:", error);
 
         if (error.message.includes("already booked")) {
+            console.error("Seats already booked:", error.message);
             return res.status(400).json({ success: false, message: error.message });
         } else {
+            console.error("Internal Server Error");
             return res.status(500).json({ success: false, message: "Internal Server Error" });
         }
     }

@@ -23,7 +23,7 @@ function fetchBookedSeats({ movieId, showTime }) {
     }
 }
 
-async function createBookings(newBooking) {
+async function createBookings(newBooking, req) {
     try {
         const allBookings = getBookings();
         const seats = newBooking.seats ? newBooking.seats.map((seatObj) => seatObj.seatNumber) : [];
@@ -65,7 +65,7 @@ async function createBookings(newBooking) {
 
         console.log("cinemaDB after modification:", cinemaDB);
 
-        writeCinemaDBFile(cinemaDB, cinemaDBPath);
+        // writeCinemaDBFile(cinemaDB, cinemaDBPath);
 
         const bookedSeats = seats.map((seatNumber) => ({ seatNumber, booked: true }));
 
