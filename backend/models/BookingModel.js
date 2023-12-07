@@ -144,16 +144,35 @@ function getSelectedShow(cinemaDB, newBooking) {
 }
 
 function checkIfSeatsAlreadyBooked(selectedShow, seats) {
-    const seatsToBook = seats.map((seatNumberObj) => seatNumberObj.seatNumber);
+    console.log("seats:", seats)
+    console.log("Selected Show:", selectedShow);
+    const alreadyBookedSeats = seats.filter((seatObj) => {
+        const seatNumber = seatObj;
 
-    const alreadyBookedSeats = seatsToBook.filter((seatNumber) => {
-        const seatIndex = selectedShow.seats.findIndex((seat) => seat.seatNumber === seatNumber);
-        return seatIndex !== -1 && selectedShow.seats[seatIndex].booked;
+        if (!seatNumber) {
+            console.error("Error: Invalid seatNumberObj in the seats array.");
+            // Optionally, reject the booking request or take appropriate action
+            return false;
+        }
+
+        const seat = selectedShow.seats.find((s) => s.seatNumber === seatNumber);
+
+        if (!seat) {
+            console.error(`Error: Seat ${seatNumber} not found in the selected show.`);
+            // Optionally, handle this error case
+            return false;
+        }
+
+        return seat.booked;
     });
 
+    console.log("Already Booked Seats:", alreadyBookedSeats);
+
     if (alreadyBookedSeats.length > 0) {
-        console.error(`Error: Seats ${alreadyBookedSeats.join(", ")} are already booked.`);
-        throw new Error(`Seats ${alreadyBookedSeats.join(", ")} are already booked.`);
+        console.error(
+            `Error: Seats ${alreadyBookedSeats.map((seat) => seat.seatNumber).join(", ")} are already booked.`
+        );
+        throw new Error(`Seats ${alreadyBookedSeats.map((seat) => seat.seatNumber).join(", ")} are already booked.`);
     }
 }
 

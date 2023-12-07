@@ -36,11 +36,11 @@
               },
               {
                 "seatNumber": "A6",
-                "booked": false
+                "booked": true
               },
               {
                 "seatNumber": "A7",
-                "booked": false
+                "booked": true
               },
               {
                 "seatNumber": "A8",
