@@ -43,7 +43,9 @@ npm run dev
 VITE v4.5.0  ready in 515 ms
 
   ➜  Local:   http://localhost:5173/
+
   ➜  Network: use --host to expose
+  
   ➜  press h to show help
 
 If it does that the server should be up and running on this URL: http://localhost:5173/
