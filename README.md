@@ -40,13 +40,17 @@ npm run dev
 ```
 9. When you've done that the backend ternimal should say "Server is listening on port 3123" and the frontend terminal something like this:
 
+---
+
 VITE v4.5.0  ready in 515 ms
 
   ➜  Local:   http://localhost:5173/
 
   ➜  Network: use --host to expose
-  
+
   ➜  press h to show help
+
+---
 
 If it does that the server should be up and running on this URL: http://localhost:5173/
 
