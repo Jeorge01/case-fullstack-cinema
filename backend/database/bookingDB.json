@@ -1,1 +1,1199 @@
-[{"email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":"A2"},{"seatNumber":"A14"},{"seatNumber":"A26"}],"bookedAt":"2023-11-16T22:26:40.886Z"},{"name":"sdas","email":"sadas@sadas.copm","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A1"},"booked":true}],"bookedAt":"2023-11-20T22:40:50.862Z"},{"name":"sadas","email":"sadasd@sadas.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A1"},"booked":true}],"bookedAt":"2023-11-20T23:06:13.070Z"},{"name":"asdas","email":"dadas@sdas.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A1"},"booked":true}],"bookedAt":"2023-11-20T23:11:25.572Z"},{"name":"dsada","email":"asdas@sadasd.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true}],"bookedAt":"2023-11-20T23:15:11.593Z"},{"name":"dasd","email":"sadasd@sadas.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A1"},"booked":true}],"bookedAt":"2023-11-20T23:34:23.050Z"},{"name":"sadasd","email":"asdsa@sadasdas.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A1"},"booked":true}],"bookedAt":"2023-11-20T23:42:07.028Z"},{"name":"sada","email":"sadas@s.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A1"},"booked":true}],"bookedAt":"2023-11-21T00:00:45.986Z"},{"name":"klsad","email":"sadas@sdasd.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A13"},"booked":true}],"bookedAt":"2023-11-21T13:56:28.823Z"},{"name":"dasdas","email":"sadas@sadas.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A25"},"booked":true}],"bookedAt":"2023-11-21T14:15:47.377Z"},{"name":"sadas","email":"sdasd@sadas.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true}],"bookedAt":"2023-11-21T14:19:46.730Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true},{"seatNumber":{"seatNumber":"A14"},"booked":true},{"seatNumber":{"seatNumber":"A26"},"booked":true}],"bookedAt":"2023-11-21T22:32:59.050Z"},{"name":"Balle","username":"balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true},{"seatNumber":{"seatNumber":"A14"},"booked":true},{"seatNumber":{"seatNumber":"A26"},"booked":true}],"bookedAt":"2023-11-21T22:47:46.115Z"},{"name":"dasdas","email":"asdasd@sadasd.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A14"},"booked":true},{"seatNumber":{"seatNumber":"A26"},"booked":true}],"bookedAt":"2023-11-27T22:08:29.793Z"},{"name":"asdasd","email":"asdas@sadasd.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A16"},"booked":true},{"seatNumber":{"seatNumber":"A28"},"booked":true}],"bookedAt":"2023-11-27T22:16:28.489Z"},{"name":"sadas","email":"asddasd@sadasd.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A29"},"booked":true}],"bookedAt":"2023-11-28T22:32:40.256Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true},{"seatNumber":{"seatNumber":"A14"},"booked":true},{"seatNumber":{"seatNumber":"A26"},"booked":true}],"bookedAt":"2023-12-05T00:36:45.545Z"},{"name":"Balle","username":"balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true},{"seatNumber":{"seatNumber":"A14"},"booked":true},{"seatNumber":{"seatNumber":"A26"},"booked":true}],"bookedAt":"2023-12-05T00:38:30.359Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true},{"seatNumber":{"seatNumber":"A14"},"booked":true},{"seatNumber":{"seatNumber":"A26"},"booked":true}],"bookedAt":"2023-12-06T13:43:39.686Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true},{"seatNumber":{"seatNumber":"A14"},"booked":true},{"seatNumber":{"seatNumber":"A26"},"booked":true}],"bookedAt":"2023-12-06T13:43:58.733Z"},{"name":"Balle","username":"balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":{"seatNumber":"A2"},"booked":true},{"seatNumber":{"seatNumber":"A14"},"booked":true},{"seatNumber":{"seatNumber":"A26"},"booked":true}],"bookedAt":"2023-12-06T13:57:40.502Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"booked":true},{"booked":true},{"booked":true}],"bookedAt":"2023-12-06T14:10:12.220Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"booked":true},{"booked":true},{"booked":true}],"bookedAt":"2023-12-06T14:14:19.203Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"booked":true},{"booked":true},{"booked":true}],"bookedAt":"2023-12-06T14:14:57.358Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"booked":true},{"booked":true},{"booked":true}],"bookedAt":"2023-12-06T14:14:59.003Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"booked":true},{"booked":true},{"booked":true}],"bookedAt":"2023-12-06T14:26:56.704Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T14:55:15.495Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T14:55:17.938Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T14:57:09.334Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T15:00:01.543Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T15:07:57.978Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T15:08:00.286Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T15:08:01.498Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T15:08:19.196Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T15:09:15.237Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T15:15:36.966Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T15:27:12.702Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T16:13:17.103Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T16:13:32.113Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T16:13:38.052Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T16:13:43.092Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T16:18:00.580Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T16:28:54.831Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T16:37:27.247Z"},{"name":"Balle1","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T16:43:06.281Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T16:49:52.843Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T16:54:54.465Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T16:55:48.211Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T16:58:19.899Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:03:43.910Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:05:22.516Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:07:29.384Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:10:43.969Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:13:41.334Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:19:22.571Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:20:19.214Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:20:32.406Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T17:23:55.655Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T18:09:09.667Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T18:28:09.169Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T18:28:17.960Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T18:34:50.292Z"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T18:47:18.279Z","movieId":""},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T18:57:55.122Z","movieId":""},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T18:59:58.235Z","movieId":""},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T19:10:37.123Z","movieId":"1"},{"name":"Balle","username":"balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-15T16:00:00.000Z","seats":[{"seatNumber":"A2","booked":true},{"seatNumber":"A14","booked":true},{"seatNumber":"A26","booked":true}],"bookedAt":"2023-12-06T19:31:00.099Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T19:31:33.314Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T23:03:35.367Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T23:11:16.461Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T23:15:23.722Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T23:18:51.417Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-06T23:23:33.056Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-06T23:24:04.165Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-07T14:15:58.811Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-07T14:16:08.280Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-07T14:28:37.149Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-07T14:28:40.935Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-07T14:32:14.462Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-07T14:32:42.705Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-07T14:35:13.529Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A3","booked":true}],"bookedAt":"2023-12-07T14:37:28.240Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-07T14:39:57.332Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-07T14:50:08.322Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-07T14:53:01.332Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A1","booked":true},{"seatNumber":"A2","booked":true},{"seatNumber":"A4","booked":true}],"bookedAt":"2023-12-07T15:04:00.295Z","movieId":"1"},{"name":"Balle","email":"kalle1@kalle.com","title":"Narnia","room":"Room 1","time":"2023-09-07T16:00:00.000Z","seats":[{"seatNumber":"A3","booked":true},{"seatNumber":"A6","booked":true},{"seatNumber":"A7","booked":true}],"bookedAt":"2023-12-07T15:04:41.153Z","movieId":"1"}]
+[
+    {
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [{ "seatNumber": "A2" }, { "seatNumber": "A14" }, { "seatNumber": "A26" }],
+        "bookedAt": "2023-11-16T22:26:40.886Z"
+    },
+    {
+        "name": "sdas",
+        "email": "sadas@sadas.copm",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A1" }, "booked": true }],
+        "bookedAt": "2023-11-20T22:40:50.862Z"
+    },
+    {
+        "name": "sadas",
+        "email": "sadasd@sadas.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A1" }, "booked": true }],
+        "bookedAt": "2023-11-20T23:06:13.070Z"
+    },
+    {
+        "name": "asdas",
+        "email": "dadas@sdas.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A1" }, "booked": true }],
+        "bookedAt": "2023-11-20T23:11:25.572Z"
+    },
+    {
+        "name": "dsada",
+        "email": "asdas@sadasd.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A2" }, "booked": true }],
+        "bookedAt": "2023-11-20T23:15:11.593Z"
+    },
+    {
+        "name": "dasd",
+        "email": "sadasd@sadas.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A1" }, "booked": true }],
+        "bookedAt": "2023-11-20T23:34:23.050Z"
+    },
+    {
+        "name": "sadasd",
+        "email": "asdsa@sadasdas.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A1" }, "booked": true }],
+        "bookedAt": "2023-11-20T23:42:07.028Z"
+    },
+    {
+        "name": "sada",
+        "email": "sadas@s.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A1" }, "booked": true }],
+        "bookedAt": "2023-11-21T00:00:45.986Z"
+    },
+    {
+        "name": "klsad",
+        "email": "sadas@sdasd.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A13" }, "booked": true }],
+        "bookedAt": "2023-11-21T13:56:28.823Z"
+    },
+    {
+        "name": "dasdas",
+        "email": "sadas@sadas.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A25" }, "booked": true }],
+        "bookedAt": "2023-11-21T14:15:47.377Z"
+    },
+    {
+        "name": "sadas",
+        "email": "sdasd@sadas.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A2" }, "booked": true }],
+        "bookedAt": "2023-11-21T14:19:46.730Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A2" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A14" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A26" }, "booked": true }
+        ],
+        "bookedAt": "2023-11-21T22:32:59.050Z"
+    },
+    {
+        "name": "Balle",
+        "username": "balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A2" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A14" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A26" }, "booked": true }
+        ],
+        "bookedAt": "2023-11-21T22:47:46.115Z"
+    },
+    {
+        "name": "dasdas",
+        "email": "asdasd@sadasd.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A14" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A26" }, "booked": true }
+        ],
+        "bookedAt": "2023-11-27T22:08:29.793Z"
+    },
+    {
+        "name": "asdasd",
+        "email": "asdas@sadasd.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A16" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A28" }, "booked": true }
+        ],
+        "bookedAt": "2023-11-27T22:16:28.489Z"
+    },
+    {
+        "name": "sadas",
+        "email": "asddasd@sadasd.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": { "seatNumber": "A29" }, "booked": true }],
+        "bookedAt": "2023-11-28T22:32:40.256Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A2" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A14" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A26" }, "booked": true }
+        ],
+        "bookedAt": "2023-12-05T00:36:45.545Z"
+    },
+    {
+        "name": "Balle",
+        "username": "balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A2" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A14" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A26" }, "booked": true }
+        ],
+        "bookedAt": "2023-12-05T00:38:30.359Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A2" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A14" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A26" }, "booked": true }
+        ],
+        "bookedAt": "2023-12-06T13:43:39.686Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A2" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A14" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A26" }, "booked": true }
+        ],
+        "bookedAt": "2023-12-06T13:43:58.733Z"
+    },
+    {
+        "name": "Balle",
+        "username": "balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": { "seatNumber": "A2" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A14" }, "booked": true },
+            { "seatNumber": { "seatNumber": "A26" }, "booked": true }
+        ],
+        "bookedAt": "2023-12-06T13:57:40.502Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [{ "booked": true }, { "booked": true }, { "booked": true }],
+        "bookedAt": "2023-12-06T14:10:12.220Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [{ "booked": true }, { "booked": true }, { "booked": true }],
+        "bookedAt": "2023-12-06T14:14:19.203Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [{ "booked": true }, { "booked": true }, { "booked": true }],
+        "bookedAt": "2023-12-06T14:14:57.358Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [{ "booked": true }, { "booked": true }, { "booked": true }],
+        "bookedAt": "2023-12-06T14:14:59.003Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [{ "booked": true }, { "booked": true }, { "booked": true }],
+        "bookedAt": "2023-12-06T14:26:56.704Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T14:55:15.495Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T14:55:17.938Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T14:57:09.334Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T15:00:01.543Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T15:07:57.978Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T15:08:00.286Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T15:08:01.498Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T15:08:19.196Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T15:09:15.237Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T15:15:36.966Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T15:27:12.702Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:13:17.103Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:13:32.113Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:13:38.052Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:13:43.092Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:18:00.580Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:28:54.831Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:37:27.247Z"
+    },
+    {
+        "name": "Balle1",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:43:06.281Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:49:52.843Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:54:54.465Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:55:48.211Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T16:58:19.899Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:03:43.910Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:05:22.516Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:07:29.384Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:10:43.969Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:13:41.334Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:19:22.571Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:20:19.214Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:20:32.406Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T17:23:55.655Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T18:09:09.667Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T18:28:09.169Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T18:28:17.960Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T18:34:50.292Z"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T18:47:18.279Z",
+        "movieId": ""
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T18:57:55.122Z",
+        "movieId": ""
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T18:59:58.235Z",
+        "movieId": ""
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T19:10:37.123Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "username": "balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A14", "booked": true },
+            { "seatNumber": "A26", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T19:31:00.099Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T19:31:33.314Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T23:03:35.367Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T23:11:16.461Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T23:15:23.722Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T23:18:51.417Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T23:23:33.056Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-06T23:24:04.165Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:15:58.811Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:16:08.280Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:28:37.149Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:28:40.935Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:32:14.462Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:32:42.705Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:35:13.529Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A3", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:37:28.240Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:39:57.332Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:50:08.322Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T14:53:01.332Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A1", "booked": true },
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A4", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T15:04:00.295Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A3", "booked": true },
+            { "seatNumber": "A6", "booked": true },
+            { "seatNumber": "A7", "booked": true }
+        ],
+        "bookedAt": "2023-12-07T15:04:41.153Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A3", "booked": true },
+            { "seatNumber": "A6", "booked": true },
+            { "seatNumber": "A7", "booked": true }
+        ],
+        "bookedAt": "2024-01-08T12:42:51.352Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A3", "booked": true },
+            { "seatNumber": "A6", "booked": true },
+            { "seatNumber": "A7", "booked": true }
+        ],
+        "bookedAt": "2024-01-09T12:59:05.232Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A3", "booked": true },
+            { "seatNumber": "A6", "booked": true },
+            { "seatNumber": "A7", "booked": true }
+        ],
+        "bookedAt": "2024-01-09T13:33:04.016Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A3", "booked": true },
+            { "seatNumber": "A6", "booked": true },
+            { "seatNumber": "A7", "booked": true }
+        ],
+        "bookedAt": "2024-01-09T13:36:51.653Z",
+        "movieId": "1"
+    },
+    {
+        "name": "Balle",
+        "email": "kalle1@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A3", "booked": true },
+            { "seatNumber": "A6", "booked": true },
+            { "seatNumber": "A7", "booked": true }
+        ],
+        "bookedAt": "2024-01-09T13:51:17.733Z",
+        "movieId": "1"
+    },
+    {
+        "name": "johannes",
+        "username": "johannes",
+        "email": "johannes@gmail.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-15T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A14", "booked": true },
+            { "seatNumber": "A26", "booked": true }
+        ],
+        "bookedAt": "2024-01-09T13:52:58.595Z",
+        "movieId": "1"
+    },
+    {
+        "name": "kalle",
+        "email": "kalle@kalle.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [
+            { "seatNumber": "A2", "booked": true },
+            { "seatNumber": "A14", "booked": true }
+        ],
+        "bookedAt": "2024-01-10T09:41:39.019Z",
+        "movieId": ""
+    },
+    {
+        "name": "smör",
+        "email": "smör@smör.com",
+        "title": "Narnia",
+        "room": "Room 1",
+        "time": "2023-09-07T16:00:00.000Z",
+        "seats": [{ "seatNumber": "A35", "booked": true }],
+        "bookedAt": "2024-01-10T09:53:53.406Z",
+        "movieId": 1
+    }
+]

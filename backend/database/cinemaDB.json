@@ -116,7 +116,7 @@
               },
               {
                 "seatNumber": "A26",
-                "booked": true
+                "booked": false
               },
               {
                 "seatNumber": "A27",
@@ -136,7 +136,7 @@
               },
               {
                 "seatNumber": "A31",
-                "booked": false
+                "booked": true
               },
               {
                 "seatNumber": "A32",
@@ -152,11 +152,11 @@
               },
               {
                 "seatNumber": "A35",
-                "booked": false
+                "booked": true
               },
               {
                 "seatNumber": "A36",
-                "booked": false
+                "booked": true
               }
             ]
           },

@@ -16,9 +16,16 @@
     {
         "userID": "18bdaa5f075-ac8cc",
         "name": "Balle",
-        "username": "balle3",
+        "username": "balle",
         "email": "kalle1@kalle.com",
-        "password": "1234kalle"
+        "password": "balle"
     },
-    { "userID": "18c376712c1-b3f66", "name": "hejsan", "username": "hej", "email": "hej@hej.com", "password": "hej" }
+    { "userID": "18c376712c1-b3f66", "name": "hejsan", "username": "hej", "email": "hej@hej.com", "password": "hej" },
+    {
+        "userID": "18ce90aaf94-e97d2",
+        "name": "johannes",
+        "username": "johannes",
+        "email": "johannes@gmail.com",
+        "password": "johannes"
+    }
 ]

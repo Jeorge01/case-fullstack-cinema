@@ -46,6 +46,7 @@ async function handleOnSubmit(
             room: selectedShow ? selectedShow.room : "",
             time: selectedShow ? selectedShow.time : "",
             seats: checkedSeats.map((seatNumber) => ({ seatNumber })),
+            movieId: selectedShow ? movie.movieId : "",
         };
 
         const response = await fetch("http://localhost:3123/book", {
