@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 
 function Booking({ isLoggedIn }) {   
     
-    console.log("Booking - isLoggedIn:", isLoggedIn);
+    console.log("isLoggedIn, booking", isLoggedIn);
     const location = useLocation();
     const { movie } = location.state || { movie: {} };
     const contentRef = useRef(null);
@@ -23,6 +23,7 @@ function Booking({ isLoggedIn }) {
 
     return (
         <div className="booking">
+            {isLoggedIn ? "user is logged in" : "user is not logged in"}
             <BookingHeader isLoggedIn={isLoggedIn} setSearchString={setSearchString} searchString={searchString} />
             <div className="container gap2">
                 <div>

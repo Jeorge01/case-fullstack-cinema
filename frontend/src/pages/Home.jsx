@@ -4,6 +4,7 @@ import HomeHeader from "../components/HomeHeader";
 import DataFetcher from "../components/DataFetcher";
 
 function Home({ isLoggedIn }) {
+    console.log("isLoggedIn, johannes", isLoggedIn);
     const [seatData, setSeatData] = useState([]); // Store the seat booking data
     const [checkboxes, setCheckboxes] = useState([]); // Store the checkbox statuses
 
@@ -18,9 +19,10 @@ function Home({ isLoggedIn }) {
 
     const [searchString, setSearchString] = useState("");
 
-    useEffect(() => {
-        console.log("Home - isLoggedIn:", isLoggedIn);
-    }, [isLoggedIn]);
+
+    // useEffect(() => {
+    //     console.log("Home - isLoggedIn:", isLoggedIn);
+    // }, [isLoggedIn]);
 
     // trigger the arrow function inside useEffect ONE time before loading
     useEffect(() => {
@@ -63,6 +65,7 @@ function Home({ isLoggedIn }) {
 
     return (
         <div className="home">
+        {isLoggedIn ? "user is logged in" : "user is not logged in"}
             <HomeHeader isLoggedIn={isLoggedIn} setSearchString={setSearchString} searchString={searchString} />
             {/* <h1>hej</h1> */}
             <div className="container gap cardboxes">

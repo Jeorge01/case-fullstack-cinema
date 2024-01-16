@@ -12,7 +12,8 @@ import SeeBookings from "./pages/SeeBookings";
 
 function App() {
     const [message, setMessage] = useState("");
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    // const [isLoggedIn, setIsLoggedIn] = useState(false);
+
     useEffect(() => {
         fetch("http://localhost:3123/")
             .then((res) => {
@@ -25,19 +26,47 @@ function App() {
             .catch((err) => console.error("Error fetching data:", err));
     }, []);
 
+
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    useEffect(() => {
+        // Check if the user is logged in when the component mounts
+        const storedLoginStatus = localStorage.getItem("isLoggedIn");
+        if (storedLoginStatus === "true") {
+            setIsLoggedIn(true);
+        }
+    }, []);
+
+    // useEffect(() => {
+    //     console.log('isLoggedIn in App useEffect:', isLoggedIn);
+    // }, [isLoggedIn]);
+
+    // Function to handle user login
+    // const handleLogin = () => {
+    //     setIsLoggedIn(true);
+    //     console.log("User logged in. isLoggedIn set to true");
+    // };
+
+    // // Function to handle user logout
+    // const handleLogout = () => {
+    //     setIsLoggedIn(false);
+    //     console.log("User logged out. isLoggedIn set to false");
+    // };
+
     return (
         <div>
+            {isLoggedIn ? "user is logged in" : "user is not logged in"}
             <BrowserRouter>
-                <AuthContainer>
+                <AuthContainer setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}>
                     <Routes>
-                        <Route index element={<Home />} />
-                        <Route path="/home" element={<Home />} />
-                        <Route path="/booking/*" element={<Booking />} />
-                        <Route path="/signIn/" element={<SignIn setIsLoggedIn={setIsLoggedIn} />} />
+                        {/* <Route index element={<Home isLoggedIn={isLoggedIn} />} />
+                        <Route path="/home" element={<Home isLoggedIn={isLoggedIn} />} />
+                        <Route path="/booking/*" element={<Booking isLoggedIn={isLoggedIn} />} />
+                        <Route path="/signIn/" element={<SignIn isLoggedIn={isLoggedIn} />} />
                         <Route path="/signUp/" element={<SignUp />} />
-                        <Route path="/userSettings/*" element={<UserSettings />} />
-                        <Route path="/changeData/*" element={<ChangeData />} />
-                        <Route path="/seeBookings/*" element={<SeeBookings />} />
+                        <Route path="/userSettings/*" element={<UserSettings isLoggedIn={isLoggedIn} />} />
+                        <Route path="/changeData/*" element={<ChangeData isLoggedIn={isLoggedIn} />} />
+                        <Route path="/seeBookings/*" element={<SeeBookings isLoggedIn={isLoggedIn} />} /> */}
                         {/* <Route path='*' element={<NoPage />} /> */}
                     </Routes>
                 </AuthContainer>

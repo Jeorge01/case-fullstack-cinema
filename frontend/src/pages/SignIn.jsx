@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import ReturnToMovies from "../components/ReturnToMovies";
 
 function SignIn({ setIsLoggedIn }) {
@@ -58,7 +58,11 @@ function SignIn({ setIsLoggedIn }) {
             // Assuming successful sign-in, setIsLoggedIn(true)
             setIsLoggedIn(true);
             console.log("isLoggedIn:", setIsLoggedIn);
-            navigate('/home');
+
+            // Save isLoggedIn to local storage
+            localStorage.setItem("isLoggedIn", true);
+
+            navigate("/home");
         } catch (error) {
             // Handle unexpected errors
             console.error("An unexpected error occurred during sign-in:", error);
