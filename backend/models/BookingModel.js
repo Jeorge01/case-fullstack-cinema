@@ -72,6 +72,7 @@ async function createBookings(newBooking, req) {
         const bookedSeats = seats.map((seatNumber) => ({ seatNumber, booked: true }));
 
         const bookingToAdd = {
+            userID: newBooking.userID,
             name: newBooking.name,
             username: newBooking.username,
             email: newBooking.email,
