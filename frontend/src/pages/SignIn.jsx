@@ -8,16 +8,16 @@ function SignIn({ setIsLoggedIn }) {
     // const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();
 
-    useEffect(() => {
-        // Check for the existence of the session cookie on component mount
-        const sessionKey = document.cookie.replace(/(?:(?:^|.*;\s*)sessionKey\s*=\s*([^;]*).*$)|^.*$/, "$1");
+    // useEffect(() => {
+    //     // Check for the existence of the session cookie on component mount
+    //     const sessionKey = document.cookie.replace(/(?:(?:^|.*;\s*)sessionKey\s*=\s*([^;]*).*$)|^.*$/, "$1");
 
-        if (sessionKey) {
-            // User is logged in, redirect or perform other actions
-            setIsLoggedIn(true);
-            // Redirect logic or other actions can be added here
-        }
-    }, []);
+    //     if (sessionKey) {
+    //         // User is logged in, redirect or perform other actions
+    //         setIsLoggedIn(true);
+    //         // Redirect logic or other actions can be added here
+    //     }
+    // }, []);
 
     const handleSignIn = async (e) => {
         e.preventDefault();
@@ -54,6 +54,9 @@ function SignIn({ setIsLoggedIn }) {
             // Authentication successful, you might want to redirect the user or perform other actions
             console.log("Sign-in successful");
             const { sessionKey } = await response.json();
+
+            // Save sessionKey to local storage
+            localStorage.setItem("sessionKey", sessionKey);
 
             // Assuming successful sign-in, setIsLoggedIn(true)
             setIsLoggedIn(true);

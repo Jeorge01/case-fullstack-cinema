@@ -42,10 +42,12 @@ function handleSignIn(req, res) {
     userSessions[user.username] = sessionKey;
 
     console.log("User authenticated successfully");
-    res.cookie('sessionKey', sessionKey, { httpOnly: true, secure: true }); // Adjust secure based on your setup
+    // res.cookie('sessionKey', sessionKey, { httpOnly: true, secure: true }); // Adjust secure based on your setup
     res.send({ sessionKey });
-}
 
+    // Save sessionKey to local storage
+    // localStorage.setItem("sessionKey", sessionKey);
+}
 
 function handleShowAllUsers(req, res) {
     const allUsersData = UserModel.showAllUsers();
