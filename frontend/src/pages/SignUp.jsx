@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import ReturnToMovies from "../components/ReturnToMovies";
 
+
 function SignUp() {
-    console.log("Rendering SignUp component");
+    const navigate = useNavigate(); 
     const [formData, setFormData] = useState({
         fullName: "",
         username: "",
@@ -14,6 +16,7 @@ function SignUp() {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
+        console.log("handleChange:", name, value);
         setFormData((prevData) => ({
             ...prevData,
             [name]: value,
@@ -34,6 +37,8 @@ function SignUp() {
             return;
         }
 
+        console.log("formData before postData:", formData);
+
         // Prepare the data for the POST request
         const postData = {
             name: formData.fullName,
@@ -41,6 +46,8 @@ function SignUp() {
             email: formData.email,
             password: formData.password,
         };
+
+        console.log(postData);
 
         try {
             const response = await fetch("http://localhost:3123/createUser", {
@@ -60,6 +67,7 @@ function SignUp() {
 
             // Handle success, e.g., redirect the user or show a success message
             console.log("User created successfully!");
+            navigate('/signIn');
         } catch (error) {
             console.error("Error creating user:", error);
             alert("An unexpected error occurred. Please try again.");
@@ -77,21 +85,16 @@ function SignUp() {
                 <h1>Sign In</h1>
                 <form onSubmit={handleSubmit}>
                     <div>
-                        <input type="text" name="fullName" id="fullName" placeholder="Full name" />
-                        <input type="text" name="username" id="username" placeholder="Username" />
+                        <input type="text" name="fullName" id="fullName" placeholder="Full name" onChange={handleChange} />
+                        <input type="text" name="username" id="username" placeholder="Username" onChange={handleChange} />
                     </div>
                     <div>
-                        <input type="text" name="email" id="email" placeholder="Email" />
-                        <input type="text" name="confirmEmail" id="confirmEmail" placeholder="Confirm Email" />
+                        <input type="text" name="email" id="email" placeholder="Email" onChange={handleChange} />
+                        <input type="text" name="confirmEmail" id="confirmEmail" placeholder="Confirm Email" onChange={handleChange} />
                     </div>
                     <div>
-                        <input type="password" name="password" id="password" placeholder="Password" />
-                        <input
-                            type="password"
-                            name="confirmPassword"
-                            id="confirmPassword"
-                            placeholder="Confirm password"
-                        />
+                        <input type="password" name="password" id="password" placeholder="Password" onChange={handleChange} />
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" onChange={handleChange} />
                     </div>
 
                     <input type="submit" value="Sign Up" />

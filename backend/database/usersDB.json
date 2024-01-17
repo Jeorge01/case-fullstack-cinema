@@ -27,5 +27,12 @@
         "username": "johannes",
         "email": "johannes@gmail.com",
         "password": "johannes"
+    },
+    {
+        "userID": "18d17bc7c73-d6ecc",
+        "name": "johan åkesson",
+        "username": "johan",
+        "email": "johan@johan.com",
+        "password": "kalle"
     }
 ]
